@@ -4,7 +4,7 @@ function Youtube(option){
 }
 
 Youtube.prototype.init = function(opt){
-    this.frame = $("#videoGallery> .inner");
+    this.frame = $("#videoGallery .inner");
     this.key = 'AIzaSyCP9goLwp0hdM2MgdhHMVZBwd6nQjlMn4Q';
     this.playList = 'PLMYKu8djpRq97DCnjPwHlg0sIb7xwoEGV';
     this.count = 5;
