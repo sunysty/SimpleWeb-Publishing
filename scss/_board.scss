@@ -1,87 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');//font-family: 'Noto Sans JP', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');//font-family: 'Nanum Myeongjo', serif;
-
-#sub_banner{
-    width:100%; padding:20px 0 50px;
-    .inner{
-        width:1180px; margin:0 auto; 
-        border:1px solid #999;
-        position:relative;
-    
-        h1{
-            font:500 35px/1 'Noto Sans JP';
-            color:#888;
-            padding:100px 30px;
-            text-align: right;
-        }
-
-        .wrap{
-            content:''; display:block; clear:both;
-            .homebtn{
-                display:block; width:5%; text-align:center; 
-                background:rgba(0,0,0,0.05);
-                float:left;
-                margin-right:3px;
-                a{
-                    font:15px/40px 'Nanum Myeongjo';
-                    color:#666;
-                }
-            }
-
-            select[name=firstSelect]{
-                display:block; width:25%; height:40px;
-                border:none;
-                background:rgba(0,0,0,0.05);
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666; 
-                float:left;
-                margin-right:3px;
-            }
-
-            select[name=secondSelect]{
-                display:block; width:25%; height:40px;
-                border:none;
-                background:rgba(0,0,0,0.05);
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666; 
-                float:left;
-                margin-right:3px;
-            }
-
-            select[name=searchIndex]{
-                display:block; width:15%; height:40px;
-                border:none;
-                background:rgba(0,0,0,0.05);
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666;
-                float:left;
-                margin-right:3px;
-            }
-
-            input[type=text]{
-                display:block; width:25%;height:40px;
-                border:none;
-                background:rgba(0,0,0,0.05);
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666; 
-                float:left;
-            }
-
-            button{
-                display:block; width:calc(5% - 3px*4);height:40px;
-                border:none;
-                background:rgba(0,0,0,0.05);
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666; 
-                float:left;
-
-            }
-        }
-    }
-}
-
-#content{
-    width:100%; padding:20px 0 50px;
+#board{
+    width:100%;
     .inner{
         width:1180px; margin: 0 auto; 
 
@@ -89,7 +7,7 @@
             width:100%;
             border-top:2px solid #999; 
             border-bottom:2px solid #999; 
-            margin-bottom:50px; 
+            margin-bottom:200px; 
             border-collapse:collapse; 
 
             tr{
@@ -134,14 +52,19 @@
         }
 
         .pagination{
-            width:100%; text-align:center; padding:0 50px 50px;
+            width:100%; 
+            text-align:center; 
             font-size:20px/1;
+            
             &::after{
-                content:''; display:block; clear:both;
+                content:''; 
+                display:block; 
+                clear:both;
             }
 
             .numbers{
-                font-size:0; display:inline-block; 
+                font-size:0; 
+                display:inline-block; 
             
                 a{
                     display:inline-block; width:30px; height:30px; font:15px/30px 'Nanum Myeongjo'; color:#666; text-align:center; margin:0 5px;
@@ -156,17 +79,24 @@
 }
 
 #survey{
-    width:100%; padding:100px 0;
+    width:100%; 
+    padding:100px 0;
     .inner{
-        width:1180px; margin:0 auto; 
+        width:1180px; 
+        margin:0 auto; 
         background:rgba(153, 153, 153, 0.1);
+
         h1{
             text-indent:-9999px; font-size:0;
         }
 
         .surveybox{
-            width:100%; padding:30px; border: 1px solid #ddd;
-            margin:0 auto; text-align:center;
+            width:100%; 
+            border: 1px solid #ddd;
+            margin:0 auto; 
+            text-align:center;
+            padding:30px;
+
             p{
                 margin-bottom:50px;
                 font:bold 16px 'Nanum Myeongjo';
@@ -180,10 +110,14 @@
                 font:normal 14px 'Nanum Myeongjo';
                 margin-top:20px;
                 input[type="text"]{
-                    width:350px; padding:8px;
+                    width:350px; 
+                    padding:8px;
                 }
                 button{
-                    padding:10px; background:#666; color:#eee; border:none;
+                    padding:10px; 
+                    background:#666; 
+                    color:#eee; 
+                    border:none;
                 }
             }
             
@@ -194,50 +128,7 @@
 
 //tablet
 @media screen and (max-width:1179px){
-    #sub_banner{
-        padding:20px 20px 50px;  box-sizing: border-box;
-        .inner{
-            width:100%;
-            h1{
-                font:500 30px/1 'Noto Sans JP';
-            }
-            
-            .wrap{
-                content:''; display:block; clear:both;
-                .homebtn{
-                    height:30px;
-                    a{font:14px/30px 'Nanum Myeongjo';}
-                }
-
-                select[name=firstSelect]{
-                    font:11px/30px 'Nanum Myeongjo';
-                    height:30px;
-                }
-
-                select[name=secondSelect]{
-                    font:11px/30px 'Nanum Myeongjo';
-                    height:30px;
-                }
-
-                select[name=searchIndex]{
-                    font:11px/30px 'Nanum Myeongjo';
-                    height:30px;
-                }
-
-                input[type=text]{
-                    font:11px/30px 'Nanum Myeongjo';
-                    height:30px;
-                }
-
-                button{ 
-                    font:11px/30px 'Nanum Myeongjo';
-                    height:30px;
-                }
-            }
-        }
-    }
-
-    #content{
+    #board{
         padding:20px 20px 50px;  box-sizing: border-box;
         .inner{
             width:100%; 
@@ -350,56 +241,7 @@
 
 //mobile
 @media screen and (max-width:539px){
-    #sub_banner{
-        padding:20px 20px 50px;  box-sizing: border-box;
-        .inner{
-            width:100%;
-            h1{
-                font:500 15px/1 'Noto Sans JP';
-            }
-            
-            .wrap{
-                content:''; display:block; clear:both;
-                width:100%;
-                .homebtn{
-                    width:5%; 
-                    a{
-                        font:10px/30px 'Nanum Myeongjo';
-                        color:#666;
-                    }
-                }
-
-                select[name=firstSelect]{
-                    height:30px;
-                    font:10px/30px 'Nanum Myeongjo';
-                }
-
-                select[name=secondSelect]{
-                    height:30px;
-                    font:11px/30px 'Nanum Myeongjo';
-                }
-
-                select[name=searchIndex]{
-                    height:30px;
-                    font:11px/30px 'Nanum Myeongjo';
-                }
-
-                input[type=text]{
-                    width:calc(25% - 3px*4);
-                    height:30px;
-                    padding:0 5px; box-sizing: border-box;
-                    font:11px/30px 'Nanum Myeongjo';
-                }
-
-                button{
-                    width:5%;height:30px;
-                    font:11px/30px 'Nanum Myeongjo';
-                }
-            }
-        }
-    }
-
-    #content{
+    #board{
         padding:20px 20px 30px;  box-sizing: border-box;
         .inner{
             width:100%; 

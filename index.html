@@ -7,159 +7,236 @@
     <title>포트폴리오1-기업형</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3634a11752.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="js/custom.js"></script>
+    <script defer src="js/video.js"></script>
 </head>
 
 <body>
     <header id="header">
+        <ul id="skipNavi">
+            <li><a href=".gnb">주메뉴 바로가기</a></li>
+            <li><a href="#content">본문내용 바로가기</a></li>
+            <li><a href="#footer">하단메뉴 바로가기</a></li>
+        </ul>
         <div class="inner">
-            <h1 id="logo">
-                <a href="index.html">DCODELAB<span>Lorem, ipsum dolor.</span></a>
+            <h1 class="logo">
+                <a href="index.html">
+                    LOGO
+                    <span>Lorem ipsum dolor</span>
+                </a>
             </h1>
-
-            <ul id="gnb" class="wrap">
-                <li><a href="department.html">DEPARTMENT</a></li>
-                <li><a href="community.html">COMMUNITY</a></li>
-                <li><a href="members.html">MEMBERS</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="youtube.html">YOUTUBE</a></li>
-                <li><a href="location.html">LOCATION</a></li>
-                <li><a href="#"><i class="fas fa-th"></i></a></li>
-            </ul>
             
-            <ul id="menuTab">
-                <li class="department wrap">
-                    <h2>DEPARTMENT
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </h2>
-                    <ul class="wrap">
-                        <li><a href="#">LOREM1</a></li>
-                        <li><a href="#">LOREM2</a></li>
-                        <li><a href="#">LOREM3</a></li>
-                        <li><a href="#">LOREM4</a></li>
-                    </ul>
-                </li>
+            <nav id="nav">
+                <ul class="gnb">
+                    <li>
+                        <a href="department.html">COMPANY</a>
+                        <div class="sub">
+                            <h2>COMPANY
+                                <p>About us</p>
+                            </h2>
+                            <ul>
+                                <li><a href="department.html">DEPARTMENT</a></li>
+                                <li><a href="mission.html">MISSON</a></li>
+                            </ul>
+                            <div>
+                                <!-- background -->
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <a href="video.html">MEDIA</a>
+                        <div class="sub">
+                            <h2>MEDIA
+                                <p>Our contents</p>
+                            </h2>
+                            <ul>
+                                <li><a href="video.html">VIDEO</a></li>
+                                <li><a href="photo.html">PHOTO</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <a href="location.html">LOCATION</a>
+                        <div class="sub">
+                            <h2>LOCATION
+                                <p>how to get here</p>
+                            </h2>
+                            <ul>
+                                <li><a href="location.html">KOREA</a></li>
+                                <li><a href="global.html">GLOBAL</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <li class="community wrap">
-                    <h2>COMMUNITY
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </h2>
-                    <ul class="wrap">
-                        <li><a href="#">LOREM1</a></li>
-                        <li><a href="#">LOREM2</a></li>
-                        <li><a href="#">LOREM3</a></li>
-                        <li><a href="#">LOREM4</a></li>
-                    </ul>
-                </li>
+                    <li>
+                        <a href="board.html">COMMUNITY</a>
+                        <div class="sub">
+                            <h2>COMMUNITY
+                                <p>For user</p>
+                            </h2>
+                            <ul>
+                                <li><a href="board.html">BOARD</a></li>
+                                <li><a href="qna.html">Q&A</a></li>
+                                <li><a href="news.html">NEWS</a></li>
+                            </ul>
+                            <div>
+                                <!-- background -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="menuAll">
+                    <a href="#" class="menuAll-btn">
+                        <i class="fas fa-th"></i>
+                    </a>
 
-                <li class="members wrap">
-                    <h2>MEMBERS
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </h2>
-                    <ul class="wrap">
-                        <li><a href="#">LOREM1</a></li>
-                        <li><a href="#">LOREM2</a></li>
-                        <li><a href="#">LOREM3</a></li>
-                        <li><a href="#">LOREM4</a></li>
+                    <ul class="menuAll-full">
+                        <li>
+                            <h2>COMPANY</h2>
+                            <ul>
+                                <li><a href="company_department.html">DEPARTMENT</a></li>
+                                <li><a href="company_mission.html">MISSION</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>MEDIA</h2>
+                            <ul>
+                                <li><a href="showroom_video.html">VIDEO</a></li>
+                                <li><a href="showroom_photo.html">PHOTO</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>LOCATION</h2>
+                            <ul>
+                                <li><a href="location.html">LOCATION</a></li>
+                            </ul>
+                            
+                        </li>
+                        <li>
+                            <h2>COMMUNITY </h2>
+                            <ul>
+                                <li><a href="community_board.html">BOARD</a></li>
+                                <li><a href="community_qna.html">Q&A</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
 
-                <li class="gallery wrap">
-                    <h2>GALLERY
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </h2>
-                    <ul class="wrap">
-                        <li><a href="#">LOREM1</a></li>
-                        <li><a href="#">LOREM2</a></li>
-                        <li><a href="#">LOREM3</a></li>
-                        <li><a href="#">LOREM4</a></li>
-                        <li><a href="#">LOREM5</a></li>
-                        <li><a href="#">LOREM6</a></li>
-                        <li><a href="#">LOREM7</a></li>
-                        <li><a href="#">LOREM8</a></li>
-                    </ul>
-                </li>
+                    <button class="menuAll-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </nav>
 
-                <li class="youtube wrap">
-                    <h2>YOUTUBE
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </h2>
-                    <ul class="wrap">
-                        <li><a href="#">LOREM1</a></li>
-                        <li><a href="#">LOREM2</a></li>
-                        <li><a href="#">LOREM3</a></li>
-                        <li><a href="#">LOREM4</a></li>
-                    </ul>
-                </li>
+            <div class="util">
+                <a href="login.html">Log in</a>
+                <a href="join.html">Join us</a>
+            </div>
 
-                <li class="introduce wrap">
-                    <h2>LOCATION
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </h2>
-                    <ul class="wrap">
-                        <li><a href="#">LOREM1</a></li>
-                        <li><a href="#">LOREM2</a></li>
-                        <li><a href="#">LOREM3</a></li>
-                        <li><a href="#">LOREM4</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search here."/>
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
 
-            <ul class="util wrap">
-                <li><a href="#">LogIn</a></li>
-                <li><a href="#">SignIn</a></li>
-                <li><a href="#">StieMap</a></li>
-            </ul>
-            
-            <ul class="menuMo wrap">
+            <ul class="menuMo">
                 <li>
-                    <a href="#"><i class="far fa-user"></i></a>
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-bars"></i></a>
+                    <a href="#">
+                        <i class="far fa-user"></i>
+                    </a>
                 </li>
-            </ul>
-
-            
+            </ul>        
         </div>
     </header>
-    <!-- header end -->
+    <!-- header end --> 
 
-    <section id="content">
+    <figure id="visual">
+        <div class="inner">
+
+        </div>
+    </figure>
+    <!-- visual end -->
+
+    <section id="news">
+        <div class="inner">
+            <h1>news</h1>
+            <div class="wrap">
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+            </div>
+        </div>
+    </section>
+    <!-- news end -->
+
+    <section id="brand">
+        <div class="inner">
+            <h1>brand story</h1>
+            <div class="wrap">
+                <article></article>
+                <article></article>
+                <article></article>
+            </div>
+        </div>
+    </section>
+    <!-- brand end -->
+
+    <section id="quickMenu">
+        <div class="inner">
+            <h1>content</h1>
+            <ul class="wrap">
+                <li><a href="video.html">VIDEO</a></li>
+                <li><a href="photo.html">PHOTO</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+
+                <li><a href="qna.html">QNA</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="board.html">BOARD</a></li>
+            </ul>
+        </div>
     </section>
     <!-- content end -->
 
     <footer id="footer">
         <div class="inner">
-            <div class="wrap">
-                <h1>DCODELAB<span>Lorem, ipsum dolor.</span></h1>
-                
-                <div class="mid">
-                    <ul class="wrap">
-                        <li><a href="#">PERSONAL</a></li>
-                        <li><a href="#">REJECT</a></li>
-                        <li><a href="#">CUSTOMER</a></li>
-                        <li><a href="#">SOS</a></li>
-                        <li><a href="#">CENTER</a></li>
-                    </ul>
-                    <address>
-                        12345 Lorem ipsum dolor, sit amet consectetur adipisicing.<br> TEL:012-345-789 FAX:987-654-321 
-                        <span>copyright	&copy; lorem All right reserved.</span>
-                    </address>    
-                </div>
-            
-                <div class="right">
-                    <select name="homepage" id="hompage">
-                        <option value="homepage">Lorem1</option>
-                        <option value="homepage">Lorem2</option>
-                        <option value="homepage">Lorem3</option>
-                    </select>
-                    <select name="subpage" id="subpage">
-                        <option value="subpage">Lorem1</option>
-                        <option value="subpage">Lorem2</option>
-                        <option value="subpage">Lorem3</option>
-                    </select>
-                </div>
+            <h1>PORTFOLIO<span>Lorem ipsum dolor</span></h1>
 
+            <div class="mid">
+                <ul>
+                    <li><a href="#">PERSONAL</a></li>
+                    <li><a href="#">REJECT</a></li>
+                    <li><a href="#">CUSTOMER</a></li>
+                    <li><a href="#">SOS</a></li>
+                    <li><a href="#">CENTER</a></li>
+                </ul>
+                <address>
+                    12345 Lorem ipsum dolor, sit amet consectetur adipisicing.<br> TEL:012-345-789 FAX:987-654-321 
+                    <span>copyright	&copy; lorem All right reserved.</span>
+                </address>    
+            </div>
+        
+            <div class="right">
+                <select name="homepage" id="hompage">
+                    <option value="homepage">Lorem1</option>
+                    <option value="homepage">Lorem2</option>
+                    <option value="homepage">Lorem3</option>
+                </select>
+                <select name="subpage" id="subpage">
+                    <option value="subpage">Lorem1</option>
+                    <option value="subpage">Lorem2</option>
+                    <option value="subpage">Lorem3</option>
+                </select>
             </div>
         </div>
     </footer>

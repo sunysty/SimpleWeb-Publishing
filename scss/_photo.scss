@@ -1,0 +1,47 @@
+#videoGallery{
+    .inner{
+        margin:0px auto 100px;
+        width:1180px;
+        border: red 1px solid;
+    }
+    article{
+        &::after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+    }
+    
+    article:nth-of-type(odd){
+        width:100%;
+
+        a{
+            display:block;
+            width:50%;
+            float:left;
+        }
+
+        .con{
+            width:50%;
+            float:right;
+            background:cadetblue;
+        }
+    }
+    
+    article:nth-of-type(even){
+        width:100%;
+        margin:0 auto;
+
+        a{
+            display:block;
+            width:50%;
+            float:right;
+        }
+
+        .con{
+            width:50%;
+            float:left;
+            background:cornflowerblue
+        }
+    }
+}

@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/3634a11752.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="js/custom.js"></script>
+    <script defer src="js/video.js"></script>
 </head>
 
 <body>
@@ -158,31 +159,56 @@
     </header>
     <!-- header end --> 
 
-    <figure id="sub_banner">
+    <section id="sub_banner">
         <div class="inner">
-            <h1>Lorem.<span>Lorem, ipsum.</span></h1>
-            <ul class="sub_banner-menu">
-                <li><a href="#"><i class="fas fa-home"></i></a></li>
-                <li>
-                    <select name="" id="">
-                        <option value="">Lorem.</option>
-                        <option value="">Lorem.</option>
-                        <option value="">Lorem.</option>
-                    </select>
-                </li>
-                <li>
-                    <select name="" id="">
-                        <option value="">Lorem.</option>
-                        <option value="">Lorem.</option>
-                        <option value="">Lorem.</option>
-                    </select>
-                </li>
-            </ul>
+            <h1>VIDEO</h1>
+            
+            <div class="wrap">
+                <div class="homebtn">
+                    <a href="#"><i class="fas fa-home"></i></a>
+                </div>
+                <select name="firstSelect" id="">
+                    <option value="">COMPANY</option>
+                    <option value="" selected>MEDIA</option>
+                    <option value="">LOCATION</option>
+                    <option value="">COMMUNITY</option>
+                </select>
+                <select name="secondSelect" id="">
+                    <option value="" selected>VIDEO</option>
+                    <option value="">PHOTO</option>
+                </select>
+                <select name="searchIndex" id="">
+                    <option value="">TITLE</option>
+                    <option value="">WRITER</option>
+                </select>
+                <input type="text">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
         </div>
-    </figure>
+    </section>
     <!-- sub_banner end -->
 
-    <section id="content">
+    <section id="videoGallery">
+        <div class="inner">
+            <article>
+                <a href="유튜브영상 아이디" class="pic"></a>
+                <div class="con">
+                    <h2>유튜브 제목</h2>
+                    <p>유튜브 본문</p>
+                    <span>날짜</span>
+                </div>
+            </article>
+            <article>
+                <a href="유튜브영상 아이디" class="pic"></a>
+                <div class="con">
+                    <h2>유튜브 제목</h2>
+                    <p>유튜브 본문</p>
+                    <span>날짜</span>
+                </div>
+            </article>
+        </div>
     </section>
     <!-- content end -->
 
