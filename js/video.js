@@ -1,9 +1,9 @@
-function Youtube(option){
-    this.init(option);
+function Youtube(){
+    this.init();
     this.bindingEvent();
 }
 
-Youtube.prototype.init = function(opt){
+Youtube.prototype.init = function(){
     this.frame = $("#videoGallery .inner");
     this.key = 'AIzaSyCP9goLwp0hdM2MgdhHMVZBwd6nQjlMn4Q';
     this.playList = 'PLMYKu8djpRq97DCnjPwHlg0sIb7xwoEGV';
@@ -14,14 +14,16 @@ Youtube.prototype.bindingEvent= function(){
 
     $("body").on("click", "article a", function(e){
         e.preventDefault();
-        var vidID = $(e.currentTarget).attr("href");
+        var vidID = $(this).attr("href");
         this.createPop(vidID);
+        $("body").css({overflow:"hidden"})
     }.bind(this));
 
     $("body").on("click", ".pop .close", function(e){
         e.preventDefault();
-        this.removePop();
-    }.bind(this));
+        $(this).parent(".pop").remove();
+        $("body").css({overflow:"auto"})
+    });
 }
 Youtube.prototype.callData= function(){
     $.ajax({
@@ -35,25 +37,23 @@ Youtube.prototype.callData= function(){
         }
     })
     .success(function(data){
-        var items = data.items;  
-        this.createList(items);
+        var item = data.items;  
+        this.createList(item);
     }.bind(this))
     .error(function(err){
         console.error(err);
     })
-}
+};
+
 Youtube.prototype.createList= function(items){
     $(items).each(function(index, data){  
         console.log(data);
-        var tit = data.snippet.title;
-        var txt = data.snippet.description;          
+        var txt = data.snippet.title;          
+        var tit = data.snippet.videoOwnerChannelTitle;
         var date = data.snippet.publishedAt.split("T")[0];
         var imgSrc = data.snippet.thumbnails.high.url;
         var vidId = data.snippet.resourceId.videoId;
-
-        if(txt.length>200) {
-            txt= txt.substr(0,200)+"...";
-        }   
+        if(txt.length>200) {txt= txt.substr(0,200)+"...";}   
 
         this.frame
             .append(
@@ -61,29 +61,43 @@ Youtube.prototype.createList= function(items){
                     .append(
                         $("<a class='pic'>")
                             .attr({ href: vidId })
-                            .css({ backgroundImage: "url("+imgSrc+")" }),
+                            .css({ backgroundImage:"url("+imgSrc+")" }),
                         $("<div class='con'>")
                             .append(
                                 $("<h2>").text(tit),
                                 $("<p>").text(txt),
-                                $("<span>").text(date)
+                                $("<span>").text(date),
+                                $("<a class='more'>").text("view more")
                             )
                     )
             )
     
     }.bind(this))
 }
+
 Youtube.prototype.createPop= function(vidID){
     $("body")
         .append(
             $("<aside class='pop'>")
                 .css({
-                    width: "100%", height: "100%",
-                    position: "fixed", top: 0, left: 0,
+                    width: "100%", 
+                    height: "100%",
+                    position: "fixed", 
+                    top: 0, 
+                    left: 0,
                     backgroundColor: "rgba(0,0,0,0.9)",
-                    display: "none", boxSizing: "border-box",
+                    display: "none", 
+                    boxSizing: "border-box",
                     padding: 100
                 })
+                .append(
+                    $("<a class='close'>").text("close")
+                        .css({
+                            position:"absolute",
+                            top:20, right:20,
+                            color:"#fff"
+                        })
+                )
                 .append(
                     $("<img src='img/loading.gif'>")
                         .css({
@@ -113,25 +127,11 @@ Youtube.prototype.createPop= function(vidID){
                                 })
                         )
                 )
-                .append(
-                    $("<a href='#' class='close'>")
-                        .text("close")
-                        .css({
-                            position: "absolute", top: 20, right: 20,
-                            color: "#fff"
-                        })
-                ).fadeIn()
-        );// pop append ends
+        )
 
         setTimeout(function(){
             $(".pop .con").fadeIn(500, function(){
-                $(".pop > img").remove();
+                $(this).prev().remove();
             })
-        },2000);
-
-}
-Youtube.prototype.removePop= function(){
-    $(".pop").fadeOut(500,function(){
-        $(this).remove();
-    })
-}
+        },bind(this),1000);
+    }

@@ -409,35 +409,54 @@ a {
       font: normal 5px 'Nanum Myeongjo';
       padding: 7px;
       box-sizing: border-box; } }
-#videoGallery .inner {
-  margin: 0px auto 100px;
-  width: 1180px;
-  border: red 1px solid; }
-#videoGallery article::after {
-  display: block;
-  content: '';
-  clear: both; }
-#videoGallery article:nth-of-type(odd) {
-  width: 100%; }
-  #videoGallery article:nth-of-type(odd) a {
-    display: block;
-    width: 50%;
-    float: left; }
-  #videoGallery article:nth-of-type(odd) .con {
-    width: 50%;
-    float: right;
-    background: cadetblue; }
-#videoGallery article:nth-of-type(even) {
+#videoGallery {
   width: 100%;
-  margin: 0 auto; }
-  #videoGallery article:nth-of-type(even) a {
-    display: block;
-    width: 50%;
-    float: right; }
-  #videoGallery article:nth-of-type(even) .con {
-    width: 50%;
-    float: left;
-    background: cornflowerblue; }
+  padding: 0 20px 0 20px; }
+  #videoGallery .inner {
+    margin: 0px auto 100px;
+    width: 1180px; }
+    #videoGallery .inner article {
+      width: 100%;
+      margin-bottom: 20px;
+      border-bottom: black solid 5px; }
+      #videoGallery .inner article::after {
+        display: block;
+        content: '';
+        clear: both; }
+      #videoGallery .inner article:nth-of-type(odd) .pic {
+        float: left; }
+      #videoGallery .inner article:nth-of-type(odd) .con {
+        float: right; }
+      #videoGallery .inner article:nth-of-type(even) .pic {
+        float: right; }
+      #videoGallery .inner article:nth-of-type(even) .con {
+        float: left; }
+      #videoGallery .inner article .pic {
+        display: block;
+        width: 60%;
+        height: 350px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      #videoGallery .inner article .con {
+        width: 40%;
+        padding: 50px; }
+        #videoGallery .inner article .con h2 {
+          font: bold 30px 'Nanum Myeongjo';
+          margin-bottom: 30px; }
+        #videoGallery .inner article .con p {
+          font: bold 20px 'Nanum Myeongjo';
+          margin-bottom: 30px; }
+        #videoGallery .inner article .con span {
+          display: block;
+          font: bold 20px 'Nanum Myeongjo';
+          margin-bottom: 30px; }
+        #videoGallery .inner article .con .more {
+          display: block;
+          font: bold 20px 'Nanum Myeongjo';
+          text-align: right; }
+      #videoGallery .inner article:hover {
+        background: rgba(0, 0, 0, 0.5); }
 
 #skipNavi li a {
   display: block;

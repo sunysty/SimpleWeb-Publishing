@@ -1,0 +1,83 @@
+#videoGallery{
+    width:100%;
+    padding:0 20px 0 20px;    
+    
+    .inner{
+        margin:0px auto 100px;
+        width:1180px;
+    
+        article{
+            width:100%;
+            margin-bottom:20px;
+            border-bottom:black solid 5px;
+
+            &::after{
+                display: block;
+                content: '';
+                clear: both;
+            }
+
+            &:nth-of-type(odd){
+                .pic{   
+                    float:left;  
+                }
+    
+                .con{
+                    float:right;
+                }
+            }
+            
+            &:nth-of-type(even){
+                .pic{   
+                    float:right;   
+                }
+    
+                .con{
+                    float:left;
+                }
+            }
+
+            .pic{
+                display:block;
+                width:60%;
+                height:350px;
+                overflow: hidden;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .con{
+                width:40%;
+                padding: 50px;
+
+                h2{
+                    font: bold 30px 'Nanum Myeongjo';
+                    margin-bottom:30px;
+                }
+
+                p{
+                    font: bold 20px 'Nanum Myeongjo';
+                    margin-bottom:30px;
+                }
+
+                span{
+                    display:block;
+                    font: bold 20px 'Nanum Myeongjo';
+                    margin-bottom:30px;
+                }
+
+                .more{
+                    display:block;
+                    font: bold 20px 'Nanum Myeongjo';
+                    text-align: right;
+                }
+
+            }
+
+            &:hover{
+                background:rgba(0,0,0,0.5);
+            }
+        }
+
+    }
+}
