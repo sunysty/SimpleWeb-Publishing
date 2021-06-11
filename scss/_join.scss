@@ -1,0 +1,62 @@
+#join{
+    width:100%;
+    
+    .inner{
+        width:1180px;
+        margin:0 auto;
+
+        form{
+            margin:50px 0;
+            
+            fieldset{
+                text-align: center;
+                
+                legend{ 
+                    font-size:30px; margin-bottom:50px;}
+
+                .userid{
+                    margin-bottom: 50px;
+                    
+                    label{ display: block; margin-bottom:10px;}
+                    input{ width:400px; height:40px; }
+                }
+
+                .pwd{
+                    margin-bottom: 50px;
+                    label{ display: block; margin:10px;}
+                    input{ width:400px; height:40px; }
+                }
+                
+                .email{
+                    margin-bottom: 50px;
+                    label{ display: block; margin-bottom:10px;}
+                    input{ width:calc(400px/3); height:40px; }
+                    select{ width:calc((400px/3)*2); height:40px; }
+                }
+
+                .hobby{
+                    margin-bottom: 50px;
+                    h2{ font:normal 16px 'serif'; margin-bottom:10px;}
+                    p{ font:normal 15px 'serif'; }
+                    label{ font:normal 18px 'serif'; }
+                    input{ margin-right:20px; }
+                    
+                }
+
+                .birth{
+                    margin-bottom: 30px;
+                    label{ display: block; margin-bottom:10px;}
+                    input{ width: 200px;height:40px; 
+                        &:nth-of-type(2){
+                            width:100px;
+                        }}
+                    select{ width:100px; height:40px; }
+                }
+
+                .confirm{
+                    width:400px; height:40px;
+                }
+            }
+        }
+    }
+}

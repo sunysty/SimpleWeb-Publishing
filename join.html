@@ -9,6 +9,16 @@
     <script src="https://kit.fontawesome.com/3634a11752.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="js/custom.js"></script>
+    <script>
+        $(document).ready(function(){
+            new MyValidation("#myForm",{
+                isTxt: ["userid","comments","email"],
+                isCheck: ["hobby","gender"],
+                isSelect: ["email2"],
+                isPwd: ["pwd1", "pwd2"]
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -158,11 +168,13 @@
     </header>
     <!-- header end --> 
 
-    <figure id="sub_banner">
+    <!-- <figure id="sub_banner">
         <div class="inner">
-            <h1>Lorem.<span>Lorem, ipsum.</span></h1>
+            <h1>JOIN</h1>
             <ul class="sub_banner-menu">
-                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li>
+                    <a href="#"><i class="fas fa-home"></i></a>
+                </li>
                 <li>
                     <select name="" id="">
                         <option value="">Lorem.</option>
@@ -180,9 +192,82 @@
             </ul>
         </div>
     </figure>
-    <!-- sub_banner end -->
+    sub_banner end -->
 
-    <section id="content">
+    <section id="join">
+        <div class="inner">
+            <form action="join_result.html" method="get" id="myForm">
+                <fieldset>
+                    <legend>JOIN</legend>
+
+                    <article class="userid">
+                        <label for="userid">USER ID</label>
+                        <input type="text" id="userid" name="userid" placeholder="아이디를 입력하세요.">
+                    </article>
+
+                    <article class="pwd">
+                        <label for="pwd1">PASSWORD</label>
+                        <input type="password" id="pwd1" name="pwd1" placeholder="비밀번호를 입력하세요.">
+                        <br>
+                        <label for="pwd2">RE PASSWORD</label>
+                        <input type="password" id="pwd2" name="pwd2" placeholder="비밀번호를 재입력하세요.">
+                    </article>
+
+                    <article class="email">
+                        <label for="email">E-MAIL</label>
+                        <input type="text" name="email1" id="email" placeholder="이메일 아이디를 입력하세요.">
+                        <select name="email2" id="email2">
+                            <option value="">이메일 서비스를 선택해주세요.</option>
+                            <option value="naver.com">@naver.com</option>
+                            <option value="nate.com">@nate.com</option>
+                            <option value="gmail.com">@gmail.com</option>
+                        </select>
+                    </article>
+
+                    <article class="hobby">
+                        <h2>HOBBY</h2>
+                        <p>취미를 한가지 이상 입력해주세요.</p>
+
+                        <label for="sports">SPORTS</label>
+                        <input type="checkbox" id="sports" name="hobby" value="sports">
+
+                        <label for="music">MUSIC</label>
+                        <input type="checkbox" id="music" name="hobby" value="music">
+
+                        <label for="game">GAME</label>
+                        <input type="checkbox" id="game" name="hobby" vlaue="game">
+
+                        <label for="reading">READING</label>
+                        <input type="checkbox" id="reading" name="hobby" value="reading">
+                    </article>
+
+                    <article class="birth">
+                        <label for="birth">BIRTH DAY</label>
+                        <input type="number" name="birth" id="year" placeholder="년(4자)">
+                            <select name="birth" id="month">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        <input type="number" name="birth" id="date" placeholder="일">
+                    </article>
+
+                    <!-- <article class="phone">
+                    </article> -->
+
+                    <input class="confirm" type="submit" value="CONFIRM">
+                </fieldset>
+            </form>
+        </div>
     </section>
     <!-- content end -->
 
