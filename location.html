@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3634a11752.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=10b5ff883cc29019df76bef94ed20b41"></script>
+    <script defer src="js/location.js"></script>
     <script defer src="js/custom.js"></script>
 </head>
 
@@ -160,7 +162,7 @@
 
     <figure id="sub_banner">
         <div class="inner">
-            <h1>Lorem.<span>Lorem, ipsum.</span></h1>
+            <h1>LOCATION</h1>
             <ul class="sub_banner-menu">
                 <li><a href="#"><i class="fas fa-home"></i></a></li>
                 <li>
@@ -182,14 +184,28 @@
     </figure>
     <!-- sub_banner end -->
 
-    <section id="content">
+    <section id="location">
+        <div class="inner">
+            <div id="map"></div>
+            
+            <ul class="traffic">
+                <li><a href="#">교통정보 보기</a></li>
+                <li class="on"><a href="#">교통정보 끄기</a></li>
+            </ul>
+            
+            <ul class="branch">
+                <li data-index="0" class="on"><a href="#">본점</a></li>
+                <li data-index="1"><a href="#">지점1</a></li>
+                <li data-index="2"><a href="#">지점2</a></li>
+            </ul>
+        </div>
     </section>
     <!-- content end -->
 
     <footer id="footer">
         <div class="inner">
             <div class="wrap">
-                <h1>PORTFOLIO<span>Lorem, ipsum dolor.</span></h1>
+                <h1>LOGO<span>Lorem, ipsum dolor.</span></h1>
                 
                 <div class="mid">
                     <ul class="wrap">
