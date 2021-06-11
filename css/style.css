@@ -409,6 +409,73 @@ a {
       font: normal 5px 'Nanum Myeongjo';
       padding: 7px;
       box-sizing: border-box; } }
+#join {
+  width: 100%; }
+  #join .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #join .inner form {
+      margin: 50px 0; }
+      #join .inner form fieldset {
+        text-align: center; }
+        #join .inner form fieldset legend {
+          font-size: 30px;
+          margin-bottom: 50px; }
+        #join .inner form fieldset .userid {
+          margin-bottom: 50px; }
+          #join .inner form fieldset .userid label {
+            display: block;
+            margin-bottom: 10px; }
+          #join .inner form fieldset .userid input {
+            width: 400px;
+            height: 40px; }
+        #join .inner form fieldset .pwd {
+          margin-bottom: 50px; }
+          #join .inner form fieldset .pwd label {
+            display: block;
+            margin: 10px; }
+          #join .inner form fieldset .pwd input {
+            width: 400px;
+            height: 40px; }
+        #join .inner form fieldset .email {
+          margin-bottom: 50px; }
+          #join .inner form fieldset .email label {
+            display: block;
+            margin-bottom: 10px; }
+          #join .inner form fieldset .email input {
+            width: calc(400px/3);
+            height: 40px; }
+          #join .inner form fieldset .email select {
+            width: calc((400px/3)*2);
+            height: 40px; }
+        #join .inner form fieldset .hobby {
+          margin-bottom: 50px; }
+          #join .inner form fieldset .hobby h2 {
+            font: normal 16px 'serif';
+            margin-bottom: 10px; }
+          #join .inner form fieldset .hobby p {
+            font: normal 15px 'serif'; }
+          #join .inner form fieldset .hobby label {
+            font: normal 18px 'serif'; }
+          #join .inner form fieldset .hobby input {
+            margin-right: 20px; }
+        #join .inner form fieldset .birth {
+          margin-bottom: 30px; }
+          #join .inner form fieldset .birth label {
+            display: block;
+            margin-bottom: 10px; }
+          #join .inner form fieldset .birth input {
+            width: 200px;
+            height: 40px; }
+            #join .inner form fieldset .birth input:nth-of-type(2) {
+              width: 100px; }
+          #join .inner form fieldset .birth select {
+            width: 100px;
+            height: 40px; }
+        #join .inner form fieldset .confirm {
+          width: 400px;
+          height: 40px; }
+
 #videoGallery {
   width: 100%;
   padding: 0 20px 0 20px; }
@@ -458,6 +525,129 @@ a {
       #videoGallery .inner article:hover {
         background: rgba(0, 0, 0, 0.5); }
 
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  opacity: 0; }
+  .loading.on {
+    opacity: 1; }
+
+.content {
+  width: 100%;
+  padding: 100px 0px 150px;
+  box-sizing: border-box; }
+  .content .inner {
+    width: 1180px;
+    margin: 0px auto; }
+    .content .inner > h1 {
+      font: bold 50px/1 "arial";
+      color: #333;
+      margin-bottom: 50px;
+      cursor: pointer; }
+    .content .inner #search {
+      margin-bottom: 50px; }
+    .content .inner #gallery {
+      opacity: 0;
+      transform: translateY(100px);
+      transition: 1s; }
+      .content .inner #gallery.on {
+        opacity: 1;
+        transform: translateY(0px); }
+      .content .inner #gallery ul {
+        width: 100%; }
+        .content .inner #gallery ul::after {
+          content: "";
+          display: block;
+          clear: both; }
+        .content .inner #gallery ul li {
+          float: left;
+          padding: 10px;
+          height: 300px;
+          box-sizing: border-box;
+          width: 33.333%; }
+          .content .inner #gallery ul li.item-sizer {
+            width: 33.333%;
+            opacity: 0; }
+          .content .inner #gallery ul li:nth-of-type(2) {
+            width: 66.666%; }
+          .content .inner #gallery ul li:nth-of-type(4) {
+            height: 600px; }
+          .content .inner #gallery ul li:nth-of-type(7) {
+            width: 66.666%; }
+          .content .inner #gallery ul li .inner {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            position: relative;
+            overflow: hidden; }
+            .content .inner #gallery ul li .inner > a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              opacity: 1;
+              transition: 0.5s; }
+              .content .inner #gallery ul li .inner > a > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
+            .content .inner #gallery ul li .inner p {
+              position: absolute;
+              top: -120px;
+              opacity: 0;
+              left: 20px;
+              font: bold 14px/1 "arial";
+              color: #fff;
+              transition: 0.5s; }
+            .content .inner #gallery ul li .inner .profile {
+              position: absolute;
+              bottom: -120px;
+              left: 20px;
+              opacity: 0;
+              transition: 0.5s 0.2s;
+              cursor: pointer; }
+              .content .inner #gallery ul li .inner .profile img {
+                border-radius: 50%; }
+              .content .inner #gallery ul li .inner .profile span {
+                font: 14px/1 "arial";
+                color: #fff;
+                margin-left: 15px;
+                opacity: 0.7;
+                position: relative;
+                top: -18px; }
+            .content .inner #gallery ul li .inner:hover > a {
+              opacity: 0.4; }
+            .content .inner #gallery ul li .inner:hover p {
+              top: 20px;
+              opacity: 1; }
+            .content .inner #gallery ul li .inner:hover .profile {
+              bottom: 20px;
+              opacity: 1; }
+
+@media screen and (max-width: 1179px) {
+  .content {
+    padding: 100px 40px; }
+    .content .inner {
+      width: 100%; }
+      .content .inner #search {
+        margin-bottom: 50px; }
+      .content .inner #gallery ul li {
+        width: 50%; }
+        .content .inner #gallery ul li.item-sizer {
+          width: 50%; }
+        .content .inner #gallery ul li:nth-of-type(2) {
+          width: 100%; }
+        .content .inner #gallery ul li:nth-of-type(6) {
+          width: 100%; }
+        .content .inner #gallery ul li:nth-of-type(7) {
+          width: 50%; } }
 #skipNavi li a {
   display: block;
   width: 100%;

@@ -1,3 +1,4 @@
+//gnb
 $(document).ready(function(){
     $("#skipNavi li a").on("focusin",function(){
         $(this).addClass("on"); 
