@@ -1,12 +1,6 @@
 (function($){
-    $.defaults = {
-        key : undefined,
-        gallery : "#gallery",
-        search : "#search",
-        count : 50,
-        enableIsotpe : true
-    }
 
+    
     $.fn.myFlickr = function(opt){
         opt = $.extend({}, $.defaults, opt);
         if(opt.key == undefined) {
