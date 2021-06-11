@@ -546,7 +546,8 @@ a {
         height: 350px;
         overflow: hidden;
         background-repeat: no-repeat;
-        background-size: cover; }
+        background-size: cover;
+        object-fit: cover; }
       #videoGallery .inner article .con {
         width: 40%;
         padding: 50px; }
