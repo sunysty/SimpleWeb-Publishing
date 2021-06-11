@@ -9,6 +9,18 @@
     <script src="https://kit.fontawesome.com/3634a11752.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="js/custom.js"></script>
+    <script defer src="js/photo.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content .inner").myFlickr({
+                key : "3c19448295434a3214f714c2af4c21c9",
+                gallery : "#gallery",
+                search : "#search",
+                count : 10,
+                enableIsotope : true
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -189,9 +201,21 @@
     </section>
     <!-- sub_banner end -->
 
-    <section id="content">
+    <section class="content">
+        <div class="inner">
+            <h1>Flickr Gallery</h1>
+
+            <!-- 검색 프레임 -->
+            <div id="search">
+                <input type="text">
+                <button>SEARCH</button>
+            </div>
+
+            <!-- 리스트 프레임 -->
+            <div id="gallery">                
+            </div>
+        </div>
     </section>
-    <!-- content end -->
 
     <footer id="footer">
         <div class="inner">
