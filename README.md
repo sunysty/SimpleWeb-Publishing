@@ -1,3 +1,4 @@
 # website-project_1
 
-<a href="github.io/sunysty/website-project_1">미리보기</a>
+<a href="https://sunysty.github.io/website-project_1/">미리보기</a>
+미완성
