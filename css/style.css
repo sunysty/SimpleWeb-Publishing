@@ -409,73 +409,6 @@ a {
       font: normal 5px 'Nanum Myeongjo';
       padding: 7px;
       box-sizing: border-box; } }
-#join {
-  width: 100%; }
-  #join .inner {
-    width: 1180px;
-    margin: 0 auto; }
-    #join .inner form {
-      margin: 50px 0; }
-      #join .inner form fieldset {
-        text-align: center; }
-        #join .inner form fieldset legend {
-          font-size: 30px;
-          margin-bottom: 50px; }
-        #join .inner form fieldset .userid {
-          margin-bottom: 50px; }
-          #join .inner form fieldset .userid label {
-            display: block;
-            margin-bottom: 10px; }
-          #join .inner form fieldset .userid input {
-            width: 400px;
-            height: 40px; }
-        #join .inner form fieldset .pwd {
-          margin-bottom: 50px; }
-          #join .inner form fieldset .pwd label {
-            display: block;
-            margin: 10px; }
-          #join .inner form fieldset .pwd input {
-            width: 400px;
-            height: 40px; }
-        #join .inner form fieldset .email {
-          margin-bottom: 50px; }
-          #join .inner form fieldset .email label {
-            display: block;
-            margin-bottom: 10px; }
-          #join .inner form fieldset .email input {
-            width: calc(400px/3);
-            height: 40px; }
-          #join .inner form fieldset .email select {
-            width: calc((400px/3)*2);
-            height: 40px; }
-        #join .inner form fieldset .hobby {
-          margin-bottom: 50px; }
-          #join .inner form fieldset .hobby h2 {
-            font: normal 16px 'serif';
-            margin-bottom: 10px; }
-          #join .inner form fieldset .hobby p {
-            font: normal 15px 'serif'; }
-          #join .inner form fieldset .hobby label {
-            font: normal 18px 'serif'; }
-          #join .inner form fieldset .hobby input {
-            margin-right: 20px; }
-        #join .inner form fieldset .birth {
-          margin-bottom: 30px; }
-          #join .inner form fieldset .birth label {
-            display: block;
-            margin-bottom: 10px; }
-          #join .inner form fieldset .birth input {
-            width: 200px;
-            height: 40px; }
-            #join .inner form fieldset .birth input:nth-of-type(2) {
-              width: 100px; }
-          #join .inner form fieldset .birth select {
-            width: 100px;
-            height: 40px; }
-        #join .inner form fieldset .confirm {
-          width: 400px;
-          height: 40px; }
-
 #location {
   width: 100%; }
   #location .inner {
@@ -691,6 +624,73 @@ a {
           width: 100%; }
         .content .inner #gallery ul li:nth-of-type(7) {
           width: 50%; } }
+#join {
+  width: 100%; }
+  #join .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #join .inner form {
+      margin: 50px 0; }
+      #join .inner form fieldset {
+        text-align: center; }
+        #join .inner form fieldset legend {
+          font-size: 30px;
+          margin-bottom: 50px; }
+        #join .inner form fieldset .userid {
+          margin-bottom: 50px; }
+          #join .inner form fieldset .userid label {
+            display: block;
+            margin-bottom: 10px; }
+          #join .inner form fieldset .userid input {
+            width: 400px;
+            height: 40px; }
+        #join .inner form fieldset .pwd {
+          margin-bottom: 50px; }
+          #join .inner form fieldset .pwd label {
+            display: block;
+            margin: 10px; }
+          #join .inner form fieldset .pwd input {
+            width: 400px;
+            height: 40px; }
+        #join .inner form fieldset .email {
+          margin-bottom: 50px; }
+          #join .inner form fieldset .email label {
+            display: block;
+            margin-bottom: 10px; }
+          #join .inner form fieldset .email input {
+            width: calc(400px/3);
+            height: 40px; }
+          #join .inner form fieldset .email select {
+            width: calc((400px/3)*2);
+            height: 40px; }
+        #join .inner form fieldset .hobby {
+          margin-bottom: 50px; }
+          #join .inner form fieldset .hobby h2 {
+            font: normal 16px 'serif';
+            margin-bottom: 10px; }
+          #join .inner form fieldset .hobby p {
+            font: normal 15px 'serif'; }
+          #join .inner form fieldset .hobby label {
+            font: normal 18px 'serif'; }
+          #join .inner form fieldset .hobby input {
+            margin-right: 20px; }
+        #join .inner form fieldset .birth {
+          margin-bottom: 30px; }
+          #join .inner form fieldset .birth label {
+            display: block;
+            margin-bottom: 10px; }
+          #join .inner form fieldset .birth input {
+            width: 200px;
+            height: 40px; }
+            #join .inner form fieldset .birth input:nth-of-type(2) {
+              width: 100px; }
+          #join .inner form fieldset .birth select {
+            width: 100px;
+            height: 40px; }
+        #join .inner form fieldset .confirm {
+          width: 400px;
+          height: 40px; }
+
 #skipNavi li a {
   display: block;
   width: 100%;
@@ -731,7 +731,7 @@ a {
           clear: both; }
         #header .inner #nav .gnb > li {
           display: block;
-          width: calc(70% / 4);
+          width: calc(80% / 5);
           height: 50px;
           text-align: center;
           float: left; }
@@ -764,7 +764,7 @@ a {
               display: block;
               clear: both; }
             #header .inner #nav .gnb > li .sub h2 {
-              width: calc(70% / 4);
+              width: calc(70% / 5);
               font: bold 17px/1 'Nanum Myeongjo';
               float: left;
               position: relative;
@@ -785,7 +785,7 @@ a {
                 top: 0; }
             #header .inner #nav .gnb > li .sub > ul {
               float: left;
-              width: calc((70% / 4) * 2); }
+              width: calc((70% / 5) * 2); }
               #header .inner #nav .gnb > li .sub > ul > li {
                 height: 40px;
                 border-bottom: solid 1px #999;
@@ -839,7 +839,7 @@ a {
           content: '';
           clear: both; }
         #header .inner #nav .menuAll .menuAll-full > li {
-          width: 25%;
+          width: 20%;
           height: 100%;
           float: left;
           border-right: 3px solid #000; }
