@@ -1,9 +1,9 @@
 #location{
     width:100%;
-    
     .inner{
         width:1180px;
         margin:0 auto;
+        padding:50px 0;
 
         #map{
             width:100%; 
@@ -12,15 +12,20 @@
         }
         
         .traffic{
-            float:left;  margin-top:20px; 
+            float:left;  
+            margin-top:20px; 
         
             li{
-                float:left; margin-right:10px; 
+                float:left; 
+                margin-right:10px; 
         
                 a{
-                    display:block; width:200px; height:40px; 
+                    display:block; 
+                    width:200px; 
+                    height:40px; 
                     background:#555; 
-                    font:bold 12px/40px 'arial'; color:#fff; 
+                    font:bold 12px/40px 'arial'; 
+                    color:#fff; 
                     text-align:center; 
                 }
         
