@@ -18,7 +18,7 @@ a {
 
 #sub_banner {
   width: 100%;
-  padding: 50px 0; }
+  padding-top: 50px; }
   #sub_banner .inner {
     width: 1180px;
     margin: 0 auto;
@@ -27,7 +27,7 @@ a {
     #sub_banner .inner h1 {
       font: bold 30px/1 'Nanum Myeongjo';
       color: #888;
-      padding: 200px 30px;
+      padding: 100px 30px;
       text-align: left; }
     #sub_banner .inner .wrap {
       content: '';
@@ -413,7 +413,8 @@ a {
   width: 100%; }
   #location .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 50px 0; }
     #location .inner #map {
       width: 100%;
       height: 500px;
@@ -475,14 +476,14 @@ a {
         float: left; }
       #videoGallery .inner article .pic {
         display: block;
-        width: 60%;
+        width: 65%;
         height: 350px;
-        overflow: hidden;
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         object-fit: cover; }
       #videoGallery .inner article .con {
-        width: 40%;
+        width: 35%;
         padding: 50px; }
         #videoGallery .inner article .con h2 {
           font: bold 30px 'Nanum Myeongjo';
@@ -500,6 +501,9 @@ a {
           text-align: right; }
       #videoGallery .inner article:hover {
         background: rgba(0, 0, 0, 0.5); }
+
+#sub_banner .inner .wrap input {
+  width: 200px; }
 
 .loading {
   position: fixed;

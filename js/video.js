@@ -66,8 +66,7 @@ Youtube.prototype.createList= function(items){
                             .append(
                                 $("<h2>").text(tit),
                                 $("<p>").text(txt),
-                                $("<span>").text(date),
-                                $("<a class='more'>").text("view more")
+                                $("<span>").text(date)
                             )
                     )
             )
