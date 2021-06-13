@@ -21,17 +21,17 @@
                 .pic{   
                     float:left;  
                 }
-    
+
                 .con{
                     float:right;
                 }
             }
-            
+
             &:nth-of-type(even){
                 .pic{   
                     float:right;   
                 }
-    
+
                 .con{
                     float:left;
                 }
@@ -39,16 +39,16 @@
 
             .pic{
                 display:block;
-                width:60%;
+                width:65%;
                 height:350px;
-                overflow: hidden;
-                background-repeat: no-repeat;
+                background-repeat:no-repeat;
+                background-position:center;
                 background-size: cover;
-                object-fit: cover;
+                object-fit:cover;
             }
 
             .con{
-                width:40%;
+                width:35%;
                 padding: 50px;
 
                 h2{
@@ -79,6 +79,5 @@
                 background:rgba(0,0,0,0.5);
             }
         }
-
     }
 }
