@@ -45,8 +45,9 @@
                 type: "interest"
             })
         }.bind(this));
-       
-        var btn = $(this.search.selector).children("button");
+
+        var search = $("#search")
+        var btn = $(search.selector).children("button");
         btn.on("click", function(e){
             e.preventDefault();
             this.searchTag();
