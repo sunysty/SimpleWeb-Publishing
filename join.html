@@ -255,77 +255,171 @@
     </figure>
     sub_banner end -->
 
-    <section id="join">
+    <section class="content join">
         <div class="inner">
             <form action="join_result.html" method="get" id="myForm">
                 <fieldset>
-                    <legend>JOIN</legend>
+                    <legend>Join Membership</legend>
+                    <table summary="유저의 이름, 생년월일, 성별으로 본인인증 확인 폼">
+                        <caption class="h">본인인증 입력양식 테이블</caption>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <label for="user-name">USER NAME</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="user-name" name="user-name" placeholder="Name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="user-birth">USER BIRTHDAY</label>
+                                </th>
+                                <td>
+                                    <input type="number" name="birth" id="user-birth" placeholder="year">
+                                    <select name="birth" id="user-birth">
+                                        <option value="month">month</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <input type="number" name="birth" id="user-birth" placeholder="date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="mobilecarrier">MOBILE CARRIER</label>
+                                </th>
+                                <td>
+                                    <input type="checkbox" id="skt">
+                                    <label for="skt">SKT</label>
+                                    <input type="checkbox" id="kt">
+                                    <label for="kt">KT</label>
+                                    <input type="checkbox" id="lg">
+                                    <label for="lg">LGU+</label>
+                                    <input type="checkbox" id="other">
+                                    <label for="lg">Other</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="phone">PHONE</label>
+                                </th>
+                                <td>
+                                    <select name="mobile" id="mobile">
+                                        <option value="010">010</option>
+                                        <option value="010">011</option>
+                                        <option value="010">016</option>
+                                        <option value="010">017</option>
+                                        <option value="010">018</option>
+                                        <option value="010">019</option>
+                                    </select>
+                                    - 
+                                    <input type="number">
+                                    -
+                                    <input type="number">
+                                    <button>Check</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="user-check">CERTIFICATION</label>
+                                </th>
+                                <td>
+                                    <input type="checkbox" id="user-check">
+                                    <label for="user-check">Consent to personal information processing for identification (required)</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                    <article class="userid">
-                        <label for="userid">USER ID</label>
-                        <input type="text" id="userid" name="userid" placeholder="아이디를 입력하세요.">
-                    </article>
+                    <table summary="유저의 회원가입 정보">
+                        <caption class="h">유저의 회원가입 테이블</caption>
+                        <tbody>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <label for="user-id"></label>
+                                    <input type="text" id="user-id" placeholder="Input User-ID">
+                                    <button>Check</button>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th>PASSWORD</th>
+                                <td>
+                                    <label for="pwd1">PASSWORD</label>
+                                    <input type="password" id="pwd1" name="pwd1" placeholder="Input Password Here.">
+                                    <br>
+                                    <label for="pwd2">RE PASSWORD</label>
+                                    <input type="password" id="pwd2" name="pwd2" placeholder="Input Password Here Again.">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                    <article class="pwd">
-                        <label for="pwd1">PASSWORD</label>
-                        <input type="password" id="pwd1" name="pwd1" placeholder="비밀번호를 입력하세요.">
-                        <br>
-                        <label for="pwd2">RE PASSWORD</label>
-                        <input type="password" id="pwd2" name="pwd2" placeholder="비밀번호를 재입력하세요.">
-                    </article>
+                    <table>
+                        <caption class="h">Option Information</caption>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <label for="hobby">HOBBY</label>
+                                </th>
+                                <td>
+                                    <p>취미를 한가지 이상 입력해주세요.</p>
 
-                    <article class="email">
-                        <label for="email">E-MAIL</label>
-                        <input type="text" name="email1" id="email" placeholder="이메일 아이디를 입력하세요.">
-                        <select name="email2" id="email2">
-                            <option value="">이메일 서비스를 선택해주세요.</option>
-                            <option value="naver.com">@naver.com</option>
-                            <option value="nate.com">@nate.com</option>
-                            <option value="gmail.com">@gmail.com</option>
-                        </select>
-                    </article>
+                                    <label for="sports">SPORTS</label>
+                                    <input type="checkbox" id="sports" name="hobby" value="sports">
 
-                    <article class="hobby">
-                        <h2>HOBBY</h2>
-                        <p>취미를 한가지 이상 입력해주세요.</p>
+                                    <label for="music">MUSIC</label>
+                                    <input type="checkbox" id="music" name="hobby" value="music">
 
-                        <label for="sports">SPORTS</label>
-                        <input type="checkbox" id="sports" name="hobby" value="sports">
+                                    <label for="game">GAME</label>
+                                    <input type="checkbox" id="game" name="hobby" vlaue="game">
 
-                        <label for="music">MUSIC</label>
-                        <input type="checkbox" id="music" name="hobby" value="music">
-
-                        <label for="game">GAME</label>
-                        <input type="checkbox" id="game" name="hobby" vlaue="game">
-
-                        <label for="reading">READING</label>
-                        <input type="checkbox" id="reading" name="hobby" value="reading">
-                    </article>
-
-                    <article class="birth">
-                        <label for="birth">BIRTH DAY</label>
-                        <input type="number" name="birth" id="year" placeholder="년(4자)">
-                            <select name="birth" id="month">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                            </select>
-                        <input type="number" name="birth" id="date" placeholder="일">
-                    </article>
-
-                    <!-- <article class="phone">
-                    </article> -->
-
-                    <input class="confirm" type="submit" value="CONFIRM">
+                                    <label for="reading">READING</label>
+                                    <input type="checkbox" id="reading" name="hobby" value="reading">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="user-email">E-MAIL</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="user-email" placeholder="e-mail">
+                                    <span>@</span>
+                                    <select name="email" id="user-email">
+                                        <option value="Email Address"></option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="google.com">google.comm</option>
+                                        <option value="daum.net">daum.net</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="user-address">ADDRESS</label>
+                                </th>
+                                <td>
+                                    <input type="number" id="user-address">
+                                    <button>Address Number</button>
+                                    <input type="text" id="user-address">
+                                    <input type="text" id="user-address">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input class="confirm" type="submit" value="Confirm">
                 </fieldset>
             </form>
         </div>
