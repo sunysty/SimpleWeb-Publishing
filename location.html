@@ -248,39 +248,132 @@
 
     <section id="location">
         <div class="inner">
-            <div id="map"></div>
-            
-            <ul class="traffic">
-                <li><a href="#">교통정보 보기</a></li>
-                <li class="on"><a href="#">교통정보 끄기</a></li>
-            </ul>
-            
-            <ul class="branch">
-                <li data-index="0" class="on"><a href="#">본점</a></li>
-                <li data-index="1"><a href="#">지점1</a></li>
-                <li data-index="2"><a href="#">지점2</a></li>
-            </ul>
-
-            <dl class="way">
-                <dt>주소</dt>
-                <dl>대구광역시 북구 경대로서 15길</dl>
+            <div class="location-map">
+                <div id="map"></div>
                 
-                <dt>대표전화</dt>
-                <dl>053-0000-0000</dl>
-            </dl>
+                <ul class="traffic">
+                    <li><a href="#">교통정보 보기</a></li>
+                    <li class="on"><a href="#">교통정보 끄기</a></li>
+                </ul>
+                
+                <ul class="branch">
+                    <li data-index="0" class="on"><a href="#">본점</a></li>
+                    <li data-index="1"><a href="#">지점1</a></li>
+                    <li data-index="2"><a href="#">지점2</a></li>
+                </ul>
+            </div>
 
-            <h3>찾아오시는 길</h3>
-            <table class="dataTable">
-                <caption>대구 시외버스터미널, 동대구역에서 대중교통을 이용하여 본사에 가는방법안내</caption>
-                <colgroup>
-                    <col style="width: 30%">
-                    <col style="width: 70%">
-                </colgroup>
-                <tbody></tbody>
-            </table>
+            <div class="location-info">
+                <dl>
+                    <dt>Address</dt>
+                    <dd>Lorem ipsum dolor sit amet 123(lural</dd>
+                
+                    <dt>Call</dt>
+                    <dd>062-1234-0000</dd>
+
+                    <dt>Fax</dt>
+                    <dd>062)715-2300</dd>
+                </dl>    
+            </div>
+    
+            <div class="location-con">
+                <h2>Road</h2>
+                <table class="car">
+                    <caption>Road</caption>
+                    <colgroup>
+                        <col style="width:20%;">
+                        <col style="width:15%;">
+                        <col>
+                        <col style="width:10%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Road</th>
+                            <th scope="col">Tall-gate</th>
+                            <th scope="col">Way</th>
+                            <th scope="col">Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>lorem road</td>
+                            <td>lorem tall gate</td>
+                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti voluptate deserunt possimus, corrupti incidunt?</td>
+                            <td>10 minute</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="location-con">
+                <h2>Airport</h2>
+                <table class="air">
+                    <caption>Airport</caption>
+                    <colgroup>
+                        <col style="width:20%;">
+                        <col style="width:15%;">
+                        <col>
+                        <col style="width:10%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Destination</th>
+                            <th scope="col" colspan="2">Way</th>
+                            <th scope="col">Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>lorem airport</td>
+                            <td>taxi</td>
+                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, laudantium.</td>
+                            <td>20 minute</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="location-con">
+                <h2>Bus</h2>
+                <table class="bus">
+                    <caption>Bus</caption>
+                    <colgroup>
+                        <col style="width:20%;">
+                        <col style="width:15%;">
+                        <col>
+                        <col style="width:10%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Stop</th>
+                            <th scope="col" colspan="2">Way</th>
+                            <th scope="col">Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>lorem stop</td>
+                            <td>taxi</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, recusandae.</td>
+                            <td>10 minute</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">lorem stop</td>
+                            <td>taxi</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, recusandae.</td>
+                            <td>30 minute</td>
+                        </tr>
+                        <tr>
+                            <td>bus</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, recusandae.</td>
+                            <td>60~90 minute</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
-    <!-- content end -->
+    
 
     <footer id="footer">
         <div class="inner">
