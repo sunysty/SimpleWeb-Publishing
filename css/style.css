@@ -409,6 +409,14 @@ a {
       font: normal 5px 'Nanum Myeongjo';
       padding: 7px;
       box-sizing: border-box; } }
+.department {
+  width: 100%; }
+  .department .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    .department .inner img {
+      width: 100%; }
+
 #location {
   width: 100%; }
   #location .inner {
@@ -481,53 +489,50 @@ a {
 
 #videoGallery {
   width: 100%;
-  padding: 0 20px 0 20px; }
+  padding: 0 20px 0; }
   #videoGallery .inner {
-    margin: 0px auto 100px;
+    margin: 0px auto;
     width: 1180px; }
+    #videoGallery .inner::after {
+      content: '';
+      display: block;
+      clear: both; }
     #videoGallery .inner article {
-      width: 100%;
-      margin-bottom: 20px;
-      border-bottom: black solid 5px; }
-      #videoGallery .inner article::after {
-        display: block;
-        content: '';
-        clear: both; }
-      #videoGallery .inner article:nth-of-type(odd) .pic {
-        float: left; }
-      #videoGallery .inner article:nth-of-type(odd) .con {
-        float: right; }
-      #videoGallery .inner article:nth-of-type(even) .pic {
-        float: right; }
-      #videoGallery .inner article:nth-of-type(even) .con {
-        float: left; }
+      float: left;
+      width: 33.333%;
+      height: 220px;
+      margin-bottom: 200px;
+      padding: 5px; }
+      #videoGallery .inner article:nth-of-type(1) {
+        width: 100%;
+        height: 500px; }
       #videoGallery .inner article .pic {
         display: block;
-        width: 65%;
-        height: 350px;
+        width: 100%;
+        height: 100%;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         object-fit: cover; }
+        #videoGallery .inner article .pic:hover {
+          opacity: 0.5;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
       #videoGallery .inner article .con {
-        width: 35%;
-        padding: 50px; }
+        width: 100%;
+        padding: 20px;
+        color: #000; }
         #videoGallery .inner article .con h2 {
-          font: bold 30px 'Nanum Myeongjo';
-          margin-bottom: 30px; }
-        #videoGallery .inner article .con p {
           font: bold 20px 'Nanum Myeongjo';
-          margin-bottom: 30px; }
+          margin-bottom: 20px; }
+        #videoGallery .inner article .con p {
+          font: 15px 'Nanum Myeongjo';
+          margin-bottom: 50px; }
         #videoGallery .inner article .con span {
           display: block;
-          font: bold 20px 'Nanum Myeongjo';
-          margin-bottom: 30px; }
-        #videoGallery .inner article .con .more {
-          display: block;
-          font: bold 20px 'Nanum Myeongjo';
-          text-align: right; }
-      #videoGallery .inner article:hover {
-        background: rgba(0, 0, 0, 0.5); }
+          font: 15px 'Nanum Myeongjo';
+          margin-bottom: 20px; }
 
 #sub_banner .inner .wrap input {
   width: 200px; }
