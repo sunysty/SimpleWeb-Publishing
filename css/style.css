@@ -414,8 +414,119 @@ a {
   .department .inner {
     width: 1180px;
     margin: 0 auto; }
-    .department .inner img {
-      width: 100%; }
+    .department .inner .organization {
+      width: 100%;
+      height: 1000px; }
+      .department .inner .organization h1 {
+        font: bold 30px 'Nanum Myeongjo'; }
+      .department .inner .organization .organization-wrap {
+        position: relative; }
+        .department .inner .organization .organization-wrap article {
+          width: 300px;
+          height: 150px; }
+          .department .inner .organization .organization-wrap article .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-size: cover;
+            float: left; }
+          .department .inner .organization .organization-wrap article .profile-txt {
+            width: 150px;
+            height: 100px;
+            float: left;
+            color: black;
+            padding: 50px 10px; }
+            .department .inner .organization .organization-wrap article .profile-txt span {
+              display: block; }
+              .department .inner .organization .organization-wrap article .profile-txt span:nth-of-type(1) {
+                font: bold 18px/1 'Nanum Myeongjo'; }
+              .department .inner .organization .organization-wrap article .profile-txt span:nth-of-type(2) {
+                content: '/';
+                margin-top: 10px;
+                font: 14px/1 'Nanum Myeongjo'; }
+          .department .inner .organization .organization-wrap article:nth-of-type(1) {
+            position: absolute;
+            top: 0px;
+            right: 50%;
+            transform: translateX(50%); }
+            .department .inner .organization .organization-wrap article:nth-of-type(1) .profile-pic {
+              background-image: url("https://images.unsplash.com/photo-1570820383157-91be24cf545f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"); }
+          .department .inner .organization .organization-wrap article:nth-of-type(2) {
+            position: absolute;
+            top: 300px;
+            left: 150px; }
+            .department .inner .organization .organization-wrap article:nth-of-type(2) .profile-pic {
+              background-image: url("https://images.unsplash.com/photo-1575632312417-71da8ed4992d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"); }
+          .department .inner .organization .organization-wrap article:nth-of-type(3) {
+            position: absolute;
+            top: 300px;
+            right: 150px; }
+            .department .inner .organization .organization-wrap article:nth-of-type(3) .profile-pic {
+              background-image: url("https://images.unsplash.com/photo-1584361853901-dd1904bb7987?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"); }
+          .department .inner .organization .organization-wrap article:nth-of-type(4) {
+            position: absolute;
+            top: 600px;
+            left: 0px; }
+            .department .inner .organization .organization-wrap article:nth-of-type(4) .profile-pic {
+              background-image: url("https://images.unsplash.com/photo-1534399315465-2b91232de345?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"); }
+          .department .inner .organization .organization-wrap article:nth-of-type(5) {
+            position: absolute;
+            top: 600px;
+            left: 350px; }
+            .department .inner .organization .organization-wrap article:nth-of-type(5) .profile-pic {
+              background-image: url("https://images.unsplash.com/photo-1515522775943-e02e2c68fcb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"); }
+          .department .inner .organization .organization-wrap article:nth-of-type(6) {
+            position: absolute;
+            top: 600px;
+            right: 0px; }
+            .department .inner .organization .organization-wrap article:nth-of-type(6) .profile-pic {
+              background-image: url("https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=641&q=80"); }
+          .department .inner .organization .organization-wrap article::after {
+            display: block;
+            content: '';
+            clear: both; }
+          .department .inner .organization .organization-wrap article:nth-of-type(2) .profile-pic::before, .department .inner .organization .organization-wrap article:nth-of-type(3) .profile-pic::before, .department .inner .organization .organization-wrap article:nth-of-type(4) .profile-pic::before, .department .inner .organization .organization-wrap article:nth-of-type(5) .profile-pic::before, .department .inner .organization .organization-wrap article:nth-of-type(6) .profile-pic::before {
+            display: block;
+            content: '';
+            width: 1px;
+            height: 75px;
+            background: black;
+            transform: translate(75px, -75px); }
+          .department .inner .organization .organization-wrap article:nth-of-type(1) .profile-pic::after {
+            display: block;
+            content: '';
+            width: 1px;
+            height: 75px;
+            background: black;
+            transform: translate(75px, 150px); }
+          .department .inner .organization .organization-wrap article:nth-of-type(2) .profile-pic::after, .department .inner .organization .organization-wrap article:nth-of-type(3) .profile-pic::after {
+            display: block;
+            content: '';
+            width: 1px;
+            height: 75px;
+            background: black;
+            transform: translate(75px, 75px); }
+          .department .inner .organization .organization-wrap article:nth-of-type(2)::before {
+            display: block;
+            content: '';
+            width: 580px;
+            height: 1px;
+            background: black;
+            transform: translate(75px, -75px); }
+          .department .inner .organization .organization-wrap article:nth-of-type(4)::before {
+            display: block;
+            content: '';
+            width: 350px;
+            height: 1px;
+            background: black;
+            transform: translate(75px, -75px); }
+          .department .inner .organization .organization-wrap article:nth-of-type(6)::before {
+            display: block;
+            content: '';
+            width: 150px;
+            height: 1px;
+            background: black;
+            transform: translate(-75px, -75px); }
 
 #location {
   width: 100%; }
