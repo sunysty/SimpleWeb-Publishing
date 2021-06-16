@@ -668,8 +668,7 @@ a {
     .join .inner form fieldset {
       border: none; }
       .join .inner form fieldset legend {
-        font: bold 40px 'Nanum Myeongjo';
-        margin-bottom: 100px; }
+        display: none; }
       .join .inner form fieldset h2 {
         font: bold 25px 'Nanum Myeongjo';
         margin-bottom: 10px; }
