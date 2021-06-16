@@ -6,25 +6,27 @@ function Youtube(){
 Youtube.prototype.init = function(){
     this.frame = $("#videoGallery .inner");
     this.key = 'AIzaSyCP9goLwp0hdM2MgdhHMVZBwd6nQjlMn4Q';
-    this.playList = 'PLMYKu8djpRq97DCnjPwHlg0sIb7xwoEGV';
-    this.count = 5;
+    this.playList = 'PLJprcSwJpkkkSlvIhxDLV772T96aDeHNi';
+    this.count = 15;
 }
+
 Youtube.prototype.bindingEvent= function(){
     this.callData();
 
-    $("body").on("click", "article a", function(e){
+    $("body").on("click", "article .pic", function(e){
         e.preventDefault();
         var vidID = $(this).attr("href");
-        this.createPop(vidID);
+        $(this).createPop(vidID);
         $("body").css({overflow:"hidden"})
     }.bind(this));
 
-    $("body").on("click", ".pop .close", function(e){
+    $("body").on("click", ".youtube_pop .close", function(e){
         e.preventDefault();
-        $(this).parent(".pop").remove();
+        $(this).parent(".youtube_pop").remove();
         $("body").css({overflow:"auto"})
     });
 }
+
 Youtube.prototype.callData= function(){
     $.ajax({
         url: "https://www.googleapis.com/youtube/v3/playlistItems",
@@ -65,8 +67,7 @@ Youtube.prototype.createList= function(items){
                         $("<div class='con'>")
                             .append(
                                 $("<h2>").text(tit),
-                                $("<p>").text(txt),
-                                $("<span>").text(date)
+                                $("<p>").text(txt)
                             )
                     )
             )
@@ -77,7 +78,7 @@ Youtube.prototype.createList= function(items){
 Youtube.prototype.createPop= function(vidID){
     $("body")
         .append(
-            $("<aside class='pop'>")
+            $("<aside class='youtube_pop'>")
                 .css({
                     width: "100%", 
                     height: "100%",
@@ -129,7 +130,7 @@ Youtube.prototype.createPop= function(vidID){
         )
 
         setTimeout(function(){
-            $(".pop .con").fadeIn(500, function(){
+            $(".youtube_pop .con").fadeIn(500, function(){
                 $(this).prev().remove();
             })
         },bind(this),1000);

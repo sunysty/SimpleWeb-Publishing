@@ -1,83 +1,70 @@
 #videoGallery{
     width:100%;
-    padding:0 20px 0 20px;    
+    padding:0 20px 0;    
     
     .inner{
-        margin:0px auto 100px;
+        margin:0px auto;
         width:1180px;
     
+        &::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+
         article{
-            width:100%;
-            margin-bottom:20px;
-            border-bottom:black solid 5px;
-
-            &::after{
-                display: block;
-                content: '';
-                clear: both;
-            }
-
-            &:nth-of-type(odd){
-                .pic{   
-                    float:left;  
-                }
-
-                .con{
-                    float:right;
-                }
-            }
-
-            &:nth-of-type(even){
-                .pic{   
-                    float:right;   
-                }
-
-                .con{
-                    float:left;
-                }
+            float:left;
+            width:33.333%;
+            height:220px;
+            margin-bottom:200px;
+            padding:5px;
+            
+            &:nth-of-type(1){
+                width:100%;
+                height:500px;
             }
 
             .pic{
                 display:block;
-                width:65%;
-                height:350px;
+                width:100%;
+                height:100%;
                 background-repeat:no-repeat;
                 background-position:center;
                 background-size: cover;
                 object-fit:cover;
+                
+                &:hover{
+                    opacity:0.5;
+                    background-size: cover;
+                    background-position: center ;
+                    background-repeat:no-repeat;
+
+                }
             }
 
             .con{
-                width:35%;
-                padding: 50px;
-
+                width:100%;
+                padding:20px;
+                color:#000;
+                
                 h2{
-                    font: bold 30px 'Nanum Myeongjo';
-                    margin-bottom:30px;
+                    font: bold 20px 'Nanum Myeongjo';
+                    margin-bottom:20px;
                 }
 
                 p{
-                    font: bold 20px 'Nanum Myeongjo';
-                    margin-bottom:30px;
+                    font: 15px 'Nanum Myeongjo';
+                    margin-bottom:50px;
                 }
 
                 span{
                     display:block;
-                    font: bold 20px 'Nanum Myeongjo';
-                    margin-bottom:30px;
+                    font: 15px 'Nanum Myeongjo';
+                    margin-bottom:20px;
                 }
-
-                .more{
-                    display:block;
-                    font: bold 20px 'Nanum Myeongjo';
-                    text-align: right;
-                }
-
             }
 
-            &:hover{
-                background:rgba(0,0,0,0.5);
-            }
+            
         }
     }
 }
