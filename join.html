@@ -259,9 +259,8 @@
         <div class="inner">
             <form action="join_result.html" method="get" id="myForm">
                 <fieldset>
-                    <legend>Join Membership</legend>
-
-                    <div class="table-title">User Birth</div>
+                <legend>Join Membership</legend>
+                    <h2 class="table-title">User Information</h2>
                     <table summary="유저의 이름, 생년월일, 성별으로 본인인증 확인 폼">
                         <caption class="h">본인인증 입력양식 테이블</caption>
                         <tbody>
@@ -344,23 +343,20 @@
                         </tbody>
                     </table>
 
-                    <div class="table-title">
-                        <h2>User Info</h2>
-                    </div>
+                    <h2 class="table-title">User ID & Password</h2>
                     <table summary="유저의 회원가입 정보">
                         <caption class="h">유저의 회원가입 테이블</caption>
                         <tbody>
                             <tr>
-                                <th>ID</th>
+                                <th><label for="user-id">ID</label></th>
                                 <td>
-                                    <label for="user-id"></label>
                                     <input type="text" id="user-id" placeholder="Input User-ID">
                                     <button>Check</button>
                                 </td>
                             </tr>
                             
                             <tr>
-                                <th>PASSWORD</th>
+                                <th><label for="pwd1 pwd2">PASSWORD</label></th>
                                 <td>
                                     <label for="pwd1">PASSWORD</label>
                                     <input type="password" id="pwd1" name="pwd1" placeholder="Input Password Here.">
@@ -372,9 +368,7 @@
                         </tbody>
                     </table>
 
-                    <div class="table-title">
-                        <h2>Option Info</h2>
-                    </div>
+                    <h2 class="table-title">Option Information</h2>
                     <table>
                         <caption class="h">Option Information</caption>
                         <tbody>
@@ -383,7 +377,7 @@
                                     <label for="hobby">HOBBY</label>
                                 </th>
                                 <td>
-                                    <p>취미를 한가지 이상 입력해주세요.</p>
+                                    <p>Select your hobby.</p>
 
                                     <label for="sports">SPORTS</label>
                                     <input type="checkbox" id="sports" name="hobby" value="sports">
@@ -406,7 +400,6 @@
                                     <input type="text" id="user-email" placeholder="e-mail">
                                     <span>@</span>
                                     <select name="email" id="user-email">
-                                        <option value="Email Address"></option>
                                         <option value="naver.com">naver.com</option>
                                         <option value="nate.com">nate.com</option>
                                         <option value="google.com">google.comm</option>
@@ -428,10 +421,20 @@
                         </tbody>
                     </table>
                     
-                    
-                    
-                    <input class="confirm" type="submit" value="Confirm">
-                </fieldset>
+                    <h2 class="table-title">Member Information Consent</h2>
+                    <textarea name="txtcheck" id="txtcheck" cols="30" rows="10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt optio laboriosam aliquam officia earum cupiditate voluptatum non asperiores animi? Impedit aliquid quae qui porro minus eos esse dolore excepturi voluptas ad exercitationem, consectetur aspernatur numquam architecto cupiditate consequuntur, iste debitis ipsam! Doloremque, soluta! Neque optio tenetur expedita. Eos at in dolores consequuntur fugiat reprehenderit consectetur veniam perspiciatis vero voluptatum, delectus natus dolor praesentium beatae nam eius pariatur nemo vitae totam labore! Iure rerum dicta esse molestias adipisci itaque, error sint voluptatem! Omnis accusamus, nobis ipsam aperiam, repellat dicta ea odio, deleniti praesentium non distinctio magnam labore odit? Magni saepe ratione non, repudiandae minima odit deserunt voluptas consectetur tenetur doloremque natus beatae nisi cumque consequatur error! Delectus consequatur eos explicabo sit ducimus eius aut deserunt enim architecto voluptatibus, non eum excepturi aperiam velit qui id voluptatem. Cum qui nostrum nihil necessitatibus assumenda laudantium laboriosam autem recusandae eum, quisquam, sequi possimus. Quo quidem similique repudiandae et, deleniti nisi vero quam molestias officiis, perspiciatis impedit nesciunt blanditiis modi sapiente magni voluptatibus vel ea, exercitationem ipsa iste fugit non. Praesentium adipisci explicabo earum dolorum, dolore incidunt quibusdam, non ipsum, expedita autem nostrum illum cum consequuntur accusantium? Rerum qui voluptatibus labore quos, fuga temporibus praesentium modi minima dolor autem voluptate neque itaque sed totam molestias aliquam voluptatem consectetur! Rerum architecto et vero animi corporis possimus omnis atque facilis, vel iusto modi nemo debitis aliquid impedit minus ducimus fuga quaerat nam eos. Sit iste maxime magni ipsum laudantium, ullam tempore mollitia? Atque fuga cum dicta nulla, est vel voluptate sed veritatis ab iusto debitis voluptas cumque ad ipsam maxime repellendus hic non reiciendis aliquid ipsa illum eveniet. Rerum atque nostrum praesentium adipisci? Molestias fugit fugiat velit at mollitia excepturi sint consectetur atque inventore iusto assumenda optio deserunt illo saepe nostrum dolores, cum corrupti temporibus dignissimos enim.</textarea>
+                    <input type="checkbox" id="consent-check">
+                    <label for="consent-check">Consent to personal information processing for identification (required)</label>
+                    <p>
+                        I agree to the collection/use of my personal information as follows in order for the company to use the identity verification service.<br>
+                        - Collection items: name, date of birth, gender, domestic/foreigner, mobile phone number, telecommunication company<br>
+                        - Purpose of collection/use: For identification purposes / Confirmation of membership age / Prevention of illegal use of bad members<br>
+                        - Use/retention period: Discard immediately after achieving the purpose<br>
+                        Users may refuse to collect/use, and if they refuse, they cannot sign up for membership.<br>
+                    </p>
+            </fieldset>
+
+                <input class="confirm" type="submit" value="CONFIRM">
             </form>
         </div>
     </section>

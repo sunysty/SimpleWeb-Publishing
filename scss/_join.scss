@@ -4,59 +4,92 @@
     .inner{
         width:1180px;
         margin:0 auto;
-        padding:200px 0;
         
         form{
-            margin:50px 0;
-            
             fieldset{
-                text-align: center;
-                
+                border:none;
+
                 legend{ 
-                    font-size:30px; margin-bottom:50px;}
-
-                .userid{
-                    margin-bottom: 50px;
-                    
-                    label{ display: block; margin-bottom:10px;}
-                    input{ width:400px; height:40px; }
+                    font: bold 40px 'Nanum Myeongjo';
+                    margin-bottom:100px;
                 }
 
-                .pwd{
-                    margin-bottom: 50px;
-                    label{ display: block; margin:10px;}
-                    input{ width:400px; height:40px; }
+                h2{
+                    font: bold 25px 'Nanum Myeongjo';
+                    margin-bottom:10px;
                 }
                 
-                .email{
-                    margin-bottom: 50px;
-                    label{ display: block; margin-bottom:10px;}
-                    input{ width:calc(400px/3); height:40px; }
-                    select{ width:calc((400px/3)*2); height:40px; }
-                }
+                table{
+                    width:100%;
+                    margin-bottom:100px;
+                    border-top:2px solid #000;
 
-                .hobby{
-                    margin-bottom: 50px;
-                    h2{ font:normal 16px 'serif'; margin-bottom:10px;}
-                    p{ font:normal 15px 'serif'; }
-                    label{ font:normal 18px 'serif'; }
-                    input{ margin-right:20px; }
+                    caption{
+                        display:none;
+                    }
                     
-                }
+                    tbody{
+                        
+                        tr{
+                            height: 100px;
 
-                .birth{
-                    margin-bottom: 30px;
-                    label{ display: block; margin-bottom:10px;}
-                    input{ width: 200px;height:40px; 
-                        &:nth-of-type(2){
-                            width:100px;
-                        }}
-                    select{ width:100px; height:40px; }
-                }
+                        }
+                        th{
 
-                .confirm{
-                    width:400px; height:40px;
+                            width:30%;
+                            border-right: 2px solid #000;
+                            border-bottom:1px solid #888;
+                            label{
+                                font:bold 17px 'Nanum Myeongjo';
+                            }
+                        }
+                        td{
+                            width:70%;
+                            padding-left:30px;
+                            border-bottom:1px solid #888;
+
+                            label{
+                                font:16px 'Nanum Myeongjo';
+                            }
+                            input{
+                                padding:10px;
+                                font:16px 'Nanum Myeongjo';
+                            }
+                            select{
+                                padding:10px;
+                                font:16px 'Nanum Myeongjo';
+                            }
+                            button{
+                                padding:10px;
+                                font:16px 'Nanum Myeongjo';
+                            }
+                        }
+                    }
                 }
+                
+                textarea{
+                    width:100%;
+                    padding:20px;
+                    font:17px 'Nanum Myeongjo';
+                    border:none;
+                    border-top:2px solid #000;
+                    border-bottom:2px solid #000;
+                    margin-bottom: 50px;
+                }
+                label{
+                    font:bold 20px 'Nanum Myeongjo';
+                }
+                p{
+                    width:100%;
+                    padding:10px;
+                    border: none;
+                    font:15px 'Nanum Myeongjo';
+                    color:#999;
+                }
+            }
+            .confirm{
+                padding:10px 20px;
+                
             }
         }
     }

@@ -664,69 +664,62 @@ a {
   width: 100%; }
   .join .inner {
     width: 1180px;
-    margin: 0 auto;
-    padding: 200px 0; }
-    .join .inner form {
-      margin: 50px 0; }
-      .join .inner form fieldset {
-        text-align: center; }
-        .join .inner form fieldset legend {
-          font-size: 30px;
-          margin-bottom: 50px; }
-        .join .inner form fieldset .userid {
-          margin-bottom: 50px; }
-          .join .inner form fieldset .userid label {
-            display: block;
-            margin-bottom: 10px; }
-          .join .inner form fieldset .userid input {
-            width: 400px;
-            height: 40px; }
-        .join .inner form fieldset .pwd {
-          margin-bottom: 50px; }
-          .join .inner form fieldset .pwd label {
-            display: block;
-            margin: 10px; }
-          .join .inner form fieldset .pwd input {
-            width: 400px;
-            height: 40px; }
-        .join .inner form fieldset .email {
-          margin-bottom: 50px; }
-          .join .inner form fieldset .email label {
-            display: block;
-            margin-bottom: 10px; }
-          .join .inner form fieldset .email input {
-            width: calc(400px/3);
-            height: 40px; }
-          .join .inner form fieldset .email select {
-            width: calc((400px/3)*2);
-            height: 40px; }
-        .join .inner form fieldset .hobby {
-          margin-bottom: 50px; }
-          .join .inner form fieldset .hobby h2 {
-            font: normal 16px 'serif';
-            margin-bottom: 10px; }
-          .join .inner form fieldset .hobby p {
-            font: normal 15px 'serif'; }
-          .join .inner form fieldset .hobby label {
-            font: normal 18px 'serif'; }
-          .join .inner form fieldset .hobby input {
-            margin-right: 20px; }
-        .join .inner form fieldset .birth {
-          margin-bottom: 30px; }
-          .join .inner form fieldset .birth label {
-            display: block;
-            margin-bottom: 10px; }
-          .join .inner form fieldset .birth input {
-            width: 200px;
-            height: 40px; }
-            .join .inner form fieldset .birth input:nth-of-type(2) {
-              width: 100px; }
-          .join .inner form fieldset .birth select {
-            width: 100px;
-            height: 40px; }
-        .join .inner form fieldset .confirm {
-          width: 400px;
-          height: 40px; }
+    margin: 0 auto; }
+    .join .inner form fieldset {
+      border: none; }
+      .join .inner form fieldset legend {
+        font: bold 40px 'Nanum Myeongjo';
+        margin-bottom: 100px; }
+      .join .inner form fieldset h2 {
+        font: bold 25px 'Nanum Myeongjo';
+        margin-bottom: 10px; }
+      .join .inner form fieldset table {
+        width: 100%;
+        margin-bottom: 100px;
+        border-top: 2px solid #000; }
+        .join .inner form fieldset table caption {
+          display: none; }
+        .join .inner form fieldset table tbody tr {
+          height: 100px; }
+        .join .inner form fieldset table tbody th {
+          width: 30%;
+          border-right: 2px solid #000;
+          border-bottom: 1px solid #888; }
+          .join .inner form fieldset table tbody th label {
+            font: bold 17px 'Nanum Myeongjo'; }
+        .join .inner form fieldset table tbody td {
+          width: 70%;
+          padding-left: 30px;
+          border-bottom: 1px solid #888; }
+          .join .inner form fieldset table tbody td label {
+            font: 16px 'Nanum Myeongjo'; }
+          .join .inner form fieldset table tbody td input {
+            padding: 10px;
+            font: 16px 'Nanum Myeongjo'; }
+          .join .inner form fieldset table tbody td select {
+            padding: 10px;
+            font: 16px 'Nanum Myeongjo'; }
+          .join .inner form fieldset table tbody td button {
+            padding: 10px;
+            font: 16px 'Nanum Myeongjo'; }
+      .join .inner form fieldset textarea {
+        width: 100%;
+        padding: 20px;
+        font: 17px 'Nanum Myeongjo';
+        border: none;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        margin-bottom: 50px; }
+      .join .inner form fieldset label {
+        font: bold 20px 'Nanum Myeongjo'; }
+      .join .inner form fieldset p {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        font: 15px 'Nanum Myeongjo';
+        color: #999; }
+    .join .inner form .confirm {
+      padding: 10px 20px; }
 
 #skipNavi li a {
   display: block;
