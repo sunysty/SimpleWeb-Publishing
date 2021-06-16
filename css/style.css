@@ -418,12 +418,19 @@ a {
       width: 100%;
       height: 1000px; }
       .department .inner .organization h1 {
-        font: bold 30px 'Nanum Myeongjo'; }
+        font: bold 30px 'Nanum Myeongjo';
+        text-align: center;
+        padding: 50px;
+        color: #555; }
       .department .inner .organization .organization-wrap {
-        position: relative; }
+        width: 100%;
+        position: relative;
+        transform: translate(75px, 0px); }
         .department .inner .organization .organization-wrap article {
           width: 300px;
           height: 150px; }
+          .department .inner .organization .organization-wrap article :hover {
+            opacity: 0.8; }
           .department .inner .organization .organization-wrap article .profile-pic {
             width: 150px;
             height: 150px;
@@ -490,43 +497,73 @@ a {
             content: '';
             width: 1px;
             height: 75px;
-            background: black;
+            background: #999;
             transform: translate(75px, -75px); }
           .department .inner .organization .organization-wrap article:nth-of-type(1) .profile-pic::after {
             display: block;
             content: '';
             width: 1px;
             height: 75px;
-            background: black;
+            background: #999;
             transform: translate(75px, 150px); }
           .department .inner .organization .organization-wrap article:nth-of-type(2) .profile-pic::after, .department .inner .organization .organization-wrap article:nth-of-type(3) .profile-pic::after {
             display: block;
             content: '';
             width: 1px;
             height: 75px;
-            background: black;
+            background: #999;
             transform: translate(75px, 75px); }
           .department .inner .organization .organization-wrap article:nth-of-type(2)::before {
             display: block;
             content: '';
             width: 580px;
             height: 1px;
-            background: black;
+            background: #999;
             transform: translate(75px, -75px); }
           .department .inner .organization .organization-wrap article:nth-of-type(4)::before {
             display: block;
             content: '';
             width: 350px;
             height: 1px;
-            background: black;
+            background: #999;
             transform: translate(75px, -75px); }
           .department .inner .organization .organization-wrap article:nth-of-type(6)::before {
             display: block;
             content: '';
             width: 150px;
             height: 1px;
-            background: black;
+            background: #999;
             transform: translate(-75px, -75px); }
+    .department .inner .leader {
+      padding: 100px 0; }
+      .department .inner .leader article::after {
+        display: block;
+        content: '';
+        clear: both; }
+      .department .inner .leader article .pic {
+        float: left;
+        width: 400px;
+        height: 600px;
+        background-image: url("https://images.unsplash.com/photo-1570820383157-91be24cf545f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+        background-size: cover;
+        background-position: center; }
+      .department .inner .leader article .txt {
+        float: left;
+        width: calc(100% - 400px);
+        padding: 0 50px; }
+        .department .inner .leader article .txt h2 {
+          margin-bottom: 30px;
+          font: bold 30px 'Nanum Myeongjo'; }
+        .department .inner .leader article .txt strong {
+          display: block;
+          margin-bottom: 10px;
+          font: bold 20px 'Nanum Myeongjo'; }
+        .department .inner .leader article .txt span {
+          display: block;
+          margin-bottom: 30px;
+          font: bold 18px 'Nanum Myeongjo'; }
+        .department .inner .leader article .txt p {
+          font: bold 17px 'Nanum Myeongjo'; }
 
 #location {
   width: 100%; }
