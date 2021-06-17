@@ -45,7 +45,7 @@ a {
           color: #666; }
       #sub_banner .inner .wrap select[name=firstSelect] {
         display: block;
-        width: 25%;
+        width: 15%;
         height: 40px;
         border: none;
         background: #eee;
@@ -55,7 +55,7 @@ a {
         margin-right: 3px; }
       #sub_banner .inner .wrap select[name=secondSelect] {
         display: block;
-        width: 25%;
+        width: 15%;
         height: 40px;
         border: none;
         background: #eee;
@@ -710,7 +710,20 @@ a {
       margin-bottom: 50px;
       cursor: pointer; }
     .content .inner #search {
-      margin-bottom: 50px; }
+      margin: 0 auto 50px; }
+      .content .inner #search input {
+        width: 400px;
+        height: 50px;
+        padding: 10px;
+        border: none;
+        background: #eee; }
+      .content .inner #search button {
+        border: none;
+        background: none;
+        font: 20px/50px 'arial';
+        transform: translate(-40px, 5px);
+        color: #422a2a;
+        cursor: pointer; }
     .content .inner #gallery {
       opacity: 0;
       transform: translateY(100px);
@@ -1052,16 +1065,16 @@ a {
         font: bold 16px/1 'Nanum Myeongjo'; }
         #header .inner .util a:first-of-type {
           padding-right: 20px; }
-    #header .inner .search {
+    #header .inner .header-search {
       width: 25%;
       position: absolute;
       top: 60px;
       right: 0px; }
-      #header .inner .search::after {
+      #header .inner .header-search::after {
         content: '';
         display: block;
         clear: both; }
-      #header .inner .search input {
+      #header .inner .header-search input {
         width: 80%;
         height: 35px;
         border: #777 solid 1px;
@@ -1070,7 +1083,7 @@ a {
         top: 100px;
         right: 50px;
         font: 15px/1 'Nanum Myeongjo'; }
-      #header .inner .search button {
+      #header .inner .header-search button {
         width: 10%;
         height: 35px;
         background: none;
@@ -1079,7 +1092,7 @@ a {
         top: 100px;
         right: 50px;
         cursor: pointer; }
-        #header .inner .search button i {
+        #header .inner .header-search button i {
           color: #333;
           font-size: 17px; }
     #header .inner .menuMo li {
