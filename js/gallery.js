@@ -1,4 +1,12 @@
 (function($){
+    $.defaults = {
+        key : undefined,
+        gallery : "#gallery",
+        search : "#search",
+        count : 10,
+        enableIsotpe : true
+    }
+
     $.fn.myFlickr = function(opt){
         opt = $.extend({}, $.defaults, opt);
         if(opt.key == undefined) {
@@ -45,9 +53,8 @@
                 type: "interest"
             })
         }.bind(this));
-
-        var search = $("#search")
-        var btn = $(search.selector).children("button");
+       
+        var btn = $(this.search.selector).children("button");
         btn.on("click", function(e){
             e.preventDefault();
             this.searchTag();
@@ -154,7 +161,7 @@
 
     Flickr.prototype.createList = function(data){    
         var $gallery = $(this.gallery.selector);     
-
+     
         $gallery.empty();
         $gallery.append("<ul>");
 
@@ -212,7 +219,7 @@
         $(imgs).each(function(index, data){          
             data.onload = function(){         
                 imgNum++;
-
+   
                 if(imgNum === imgs.length) {                 
                     new Isotope( frame, {
                         itemSelector : ".item",
