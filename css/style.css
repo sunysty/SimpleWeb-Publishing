@@ -1439,7 +1439,9 @@ a {
         #header .inner #logo a span {
           position: absolute;
           top: -999px; }
-      #header .inner #gnb {
+      #header .inner .gnb {
+        display: none; }
+      #header .inner .header-search {
         display: none; }
       #header .inner #menuTab > li h2 {
         width: 20%;
@@ -1475,6 +1477,8 @@ a {
             display: block;
             color: #666;
             font: 12px/30px; }
+      #header .inner .menuAll {
+        display: none; }
 
   #footer {
     padding: 50px 20px; }

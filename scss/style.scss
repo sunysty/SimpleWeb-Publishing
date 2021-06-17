@@ -884,8 +884,11 @@
                 }
             }
     
-            #gnb{
+            .gnb{
                 display:none;
+            }
+            .header-search{
+                display: none;
             }
     
             #menuTab{
@@ -943,6 +946,10 @@
                         font:12px/30px;
                     }
                 }
+            }
+
+            .menuAll{
+                display: none;
             }
         }
     }
