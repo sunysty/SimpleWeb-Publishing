@@ -45,8 +45,24 @@
 
 #header{
     width: 100%; 
-    z-index: 2;
-    position:relative;
+    z-index: 3;
+    
+    &::after{
+        content:'';
+        display:block;
+        width:100vw;
+        height:1px;
+        background: #999;
+        transform: translateY(-160px);
+    }
+    &::before{
+        content:'';
+        display:block;
+        width:100vw;
+        height:1px;
+        background: #999;
+        transform: translateY(205px);
+    }
 
     .inner{
         width: 1180px; 
@@ -55,6 +71,7 @@
 
         .logo{
             padding-top:60px;
+
             a{
                 font: 800 40px/1 'Nanum Myeongjo';
                 color: #000;
@@ -71,8 +88,6 @@
             padding-top: 50px;
 
             .gnb{
-                border-bottom: 1px solid #000;      
-
                 &::after{
                     display: block; 
                     content: ''; 
@@ -85,6 +100,8 @@
                     height: 50px;
                     text-align: center;
                     float: left;
+                    transition:0.3s;
+
                     
                     >a{
                         display: block;
@@ -98,6 +115,7 @@
                         }
                         
                     }
+
                     &::after{
                         display: block;
                         content: '';
@@ -117,6 +135,7 @@
                         position: absolute; 
                         top: 100px; 
                         left: 0;
+                        z-index:3;
                         
                         &::after{
                             content: '';
@@ -125,12 +144,14 @@
                         }
                         
                         h2{
-                            width:calc(70% / 5); 
+                            width:calc((80% / 5)*1); 
                             font: bold 17px/1 'Nanum Myeongjo'; 
-                            float: left;
                             position: relative;
                             border: #000 1px solid;
                             padding: 50px 20px;
+                            margin-right:50px;
+                            float: left;
+
         
                             p{
                                 margin-top: 80px;
@@ -151,13 +172,21 @@
                         }
 
                         >ul{
-                            float: left;
-                            width: calc((70% / 5) * 2);
+                            float:left;
+                            width:calc(100% - (80% / 5)*1.5);
+
+                            &::after{
+                                display:block;
+                                content:'';
+                                clear:both;
+                            }
 
                             >li{
+                                width:31%;
                                 height: 40px;
                                 border-bottom: solid 1px #999;
-                                margin: 0 50px 50px 50px;
+                                margin:20px 20px 20px 0;
+                                float:left;
                                 
                                 a{
                                     display: block;
@@ -167,25 +196,20 @@
                                 }
         
                                 &:hover, &.on{
-                                    border-bottom: solid 2.5px #555;
-                                    // border 굵기를 1px이상으로하면 호버시 li태그가 움직인다. ->height값을 줘서 없앰
+                                    border-bottom: solid 3px #555;
+                                    
                                     a{
                                         font-weight: 800;
                                     }
                                 }
                             }
                         }
-                    }
 
-                    &:nth-of-type(1),
-                    &:nth-of-type(2),
-                    &:nth-of-type(4) {
-                        .sub div{
-                            width: 30%;
+                        div{
+                            display:none;
+                            width: 20%;
                             height: 200px;
                             background: black;
-                            float: right;
-
                         }
                     }
 
@@ -195,21 +219,30 @@
                             background-size: cover;
                         }
                     }
-                        
                     &:nth-of-type(2){
                         .sub div{
                             background-image:url("https://images.unsplash.com/photo-1570501685214-f1f5d61b2db8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80");
                             background-size: cover;
                         }   
                     }
-
+                    &:nth-of-type(3){
+                        .sub div{
+                            background-image:url("https://images.unsplash.com/photo-1624459065945-4ab3d70c9bb4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
+                            background-size: cover;
+                        }   
+                    }
                     &:nth-of-type(4){
                         .sub div{
                             background-image:url("https://images.unsplash.com/photo-1502743780242-f10d2ce370f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1016&q=80");
                             background-size: cover;
                         }
                     }
-
+                    &:nth-of-type(5){
+                        .sub div{
+                            background-image:url("https://images.unsplash.com/photo-1624421514201-db391243ed51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
+                            background-size: cover;
+                        }   
+                    }
                     
                 }
             }
@@ -293,57 +326,55 @@
         }
 
         .util{
-            position:absolute;
-            top:15px;
-            right:0px;
-            a{
-                display:inline-block;
-                color:#444;
-                font:bold 16px/1 'Nanum Myeongjo';
-
-                &:first-of-type{
-                    padding-right:20px;
+            .header-search{
+                width:20%;
+                position:absolute;
+                top:7px; 
+                right:0px;
+        
+                &::after{
+                    content:'';
+                    display:block;
+                    clear:both;
+                }
+                input{
+                    width:80%;
+                    height:30px;
+                    border:#777 solid 1px;
+                    padding:0 10px;
+                    position:absolute;
+                    right:30px;
+                    font:15px/1 'Nanum Myeongjo';
+                    
+                }
+                //button 호버시 input창 뜨도록 모션을 만들어보고 싶음
+                button{
+                    width:10%;
+                    height:35px;
+                    background:none;
+                    border:none;
+                    position:absolute;
+                    right:30px;
+                    cursor:pointer;
+                    i{
+                        color:#333;
+                        font-size:15px;
+                    }
                 }
             }
-        }
-
-        .header-search{
-            width:25%;
-            position:absolute;
-            top:60px; 
-            right:0px;
-    
-            &::after{
-                content:'';
-                display:block;
-                clear:both;
-            }
-            input{
-                width:80%;
-                height:35px;
-                border:#777 solid 1px;
-                padding:0 10px;
-                position:absolute;
-                top:100px;
-                right:50px;
-                font:15px/1 'Nanum Myeongjo';
-                
-            }
-            //button 호버시 input창 뜨도록 모션을 만들어보고 싶음
-            button{
-                width:10%;
-                height:35px;
-                background:none;
-                border:none;
-                position:absolute;
-                top:100px;
-                right:50px;
-                cursor:pointer;
-                i{
-                    color:#333;
-                    font-size:17px;
+            li:nth-of-type(2){
+                a{
+                    display:inline-block;
+                    color:#444;
+                    position:absolute;
+                    top:12px;
+                    right:0px;
+                    font-size:18px;
                 }
             }
+            
+
+            
         }
 
         .menuMo{

@@ -20,7 +20,7 @@ $(document).ready(function(){
     $(".bgGnb").css({
         position:"absolute", top:$header_ht, left:"0",
         width:"100%", height:0, backgroundColor:"#eee",
-        transitionDuration:"0.4s"
+        transitionDuration:"0.4s", zIndex:"1"
     });
 
     $(".gnb").on("mouseleave",function(){
@@ -38,7 +38,7 @@ $(document).ready(function(){
         var ht = $(el).find(".sub").outerHeight();
         $(".bgGnb").css({
             height:ht,
-            transform:"translateY(-3px)",
+            transform:"translateY(1px)",
         });
         
         $(el).children(".sub").fadeIn(200);

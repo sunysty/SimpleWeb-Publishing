@@ -5,9 +5,9 @@ function Youtube(){
 
 Youtube.prototype.init = function(){
     this.frame = $("#videoGallery .inner");
-    this.key = 'AIzaSyCP9goLwp0hdM2MgdhHMVZBwd6nQjlMn4Q';
-    this.playList = 'PLJprcSwJpkkkSlvIhxDLV772T96aDeHNi';
-    this.count = 15;
+    this.key = 'AIzaSyDL9_YYfFeGZJ7OOL7vOTVvTPBnDL4zH6k';
+    this.playList = 'PLMYKu8djpRq9oJwzmW8Yze8Uv6IrhOMij';
+    this.count = 16;
 }
 
 Youtube.prototype.bindingEvent= function(){
@@ -16,7 +16,7 @@ Youtube.prototype.bindingEvent= function(){
     $("body").on("click", "article .pic", function(e){
         e.preventDefault();
         var vidID = $(this).attr("href");
-        $(this).createPop(vidID);
+        this.createPop(vidID);
         $("body").css({overflow:"hidden"})
     }.bind(this));
 
@@ -88,14 +88,16 @@ Youtube.prototype.createPop= function(vidID){
                     backgroundColor: "rgba(0,0,0,0.9)",
                     display: "none", 
                     boxSizing: "border-box",
-                    padding: 100
+                    padding: 100,
+                    zIndex:10
                 })
                 .append(
                     $("<a class='close'>").text("close")
                         .css({
                             position:"absolute",
                             top:20, right:20,
-                            color:"#fff"
+                            color:"#fff",
+                            cursor:"pointer"
                         })
                 )
                 .append(
@@ -129,9 +131,11 @@ Youtube.prototype.createPop= function(vidID){
                 )
         )
 
+        $(".youtube_pop").fadeIn();
+
         setTimeout(function(){
             $(".youtube_pop .con").fadeIn(500, function(){
                 $(this).prev().remove();
             })
-        },bind(this),1000);
+        },1000);
     }
