@@ -52,30 +52,22 @@ $(document).ready(function(){
     }
 })
 
+
 $(document).ready(function(){
     //search
-    var $search_btn = $(".search button")
-
+    var $search_btn = $(".util button")
+    var $search_input = $("util input")
+    
     $search_btn.on("click", function(){
-        $(".search")
+        $(".header-search")
             .append(
-                $(`<input type="text" placeholder="Search here."/>`)
-                    .css({
-                        width:"50%",
-                        height:"35px",
-                        border:"#777 solid 1px",
-                        padding:"0 10px",
-                        position:"absolute",
-                        top:"100px",
-                        right:"90px",
-                        font:"15px/1 'Nanum Myeongjo'"
-                    })
+                $(`<input type='text' placeholder='Search here.'>`)
             )
     })
 
     $search_btn.on("click", function(){
-        if($search_btn == ''){
-            $(`<input type="text" placeholder="Search here."/>`).removeClass();
+        if($search_input == ''){
+            $(`<input type="text" placeholder="Search here.">`).removeClass();
         }
     })
 })
