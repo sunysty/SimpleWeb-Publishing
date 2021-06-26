@@ -929,25 +929,26 @@ a {
     width: 100vw;
     height: 1px;
     background: #999;
-    transform: translateY(-160px); }
+    transform: translateY(-185px); }
   #header::before {
     content: '';
     display: block;
     width: 100vw;
     height: 1px;
     background: #999;
-    transform: translateY(205px); }
+    transform: translateY(220px); }
   #header .inner {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
     #header .inner .logo {
-      padding-top: 60px; }
+      padding-top: 60px;
+      text-align: center; }
       #header .inner .logo a {
         font: 800 40px/1 'Nanum Myeongjo';
         color: #000; }
         #header .inner .logo a span {
-          display: inline-block;
+          display: block;
           color: #2f2f2f;
           font: normal 15px/1 'Noto Sans JP'; }
     #header .inner #nav {
@@ -1108,42 +1109,72 @@ a {
         z-index: 10;
         font-size: 30px;
         cursor: pointer; }
-    #header .inner .util .header-search {
-      width: 20%;
-      height: 30px;
+    #header .inner .gnb-top .gnb-top-left {
       position: absolute;
-      top: 7.5px;
-      right: 35px; }
-      #header .inner .util .header-search input {
-        width: 100%;
-        height: 30px;
-        background: rgba(211, 211, 211, 0.5);
-        border: none;
-        padding: 0 10px;
-        font: 15px/1 'Nanum Myeongjo'; }
-      #header .inner .util .header-search button {
-        width: 30px;
-        height: 30px;
-        border: none;
-        position: absolute;
-        right: 0px;
-        cursor: pointer;
-        color: #333;
-        font-size: 15px;
-        background: none; }
-    #header .inner .util .login {
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      top: 7.5px;
-      right: 0px; }
-      #header .inner .util .login a {
+      top: 0px;
+      left: 0px; }
+      #header .inner .gnb-top .gnb-top-left::after {
+        content: '';
         display: block;
-        width: 100%;
-        height: 100%;
-        color: #444;
-        font: 15px/30px 'arial';
-        text-align: center; }
+        clear: both; }
+      #header .inner .gnb-top .gnb-top-left .family {
+        float: left;
+        margin-right: 20px; }
+        #header .inner .gnb-top .gnb-top-left .family a {
+          display: block;
+          color: #111;
+          font: 16px/30px 'Nanum Myeongjo'; }
+      #header .inner .gnb-top .gnb-top-left .contact {
+        float: left;
+        margin-right: 20px; }
+        #header .inner .gnb-top .gnb-top-left .contact a {
+          display: block;
+          color: #111;
+          font: 16px/30px 'Nanum Myeongjo'; }
+      #header .inner .gnb-top .gnb-top-left .faq {
+        float: left; }
+        #header .inner .gnb-top .gnb-top-left .faq a {
+          display: block;
+          color: #111;
+          font: 16px/30px 'Nanum Myeongjo'; }
+      #header .inner .gnb-top .gnb-top-left > li > a:hover {
+        font-weight: bold; }
+    #header .inner .gnb-top .gnb-top-right {
+      position: absolute;
+      top: 0px;
+      right: 0px; }
+      #header .inner .gnb-top .gnb-top-right::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header .inner .gnb-top .gnb-top-right .header-search {
+        float: left; }
+        #header .inner .gnb-top .gnb-top-right .header-search button {
+          width: 30px;
+          height: 30px;
+          border: none;
+          cursor: pointer;
+          color: #333;
+          font-size: 15px;
+          background: none; }
+      #header .inner .gnb-top .gnb-top-right .cart {
+        margin-left: 10px;
+        float: left;
+        width: 30px; }
+        #header .inner .gnb-top .gnb-top-right .cart a {
+          display: block;
+          color: #444;
+          font: 16.5px/30px 'arial';
+          text-align: center; }
+      #header .inner .gnb-top .gnb-top-right .login {
+        margin-left: 10px;
+        float: left;
+        width: 30px; }
+        #header .inner .gnb-top .gnb-top-right .login a {
+          display: block;
+          color: #444;
+          font: 16.5px/30px 'arial';
+          text-align: center; }
     #header .inner .menuMo li {
       display: none; }
 

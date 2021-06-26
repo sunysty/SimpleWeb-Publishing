@@ -63,13 +63,25 @@ $(document).ready(function(){
             .append(
                 $(`<input type='text' placeholder='Search here.'>`)
             )
+            .css({
+                'width':'100%',
+                'height':'30px',
+                'background':'rgba(211, 211, 211, 0.5)',
+                'border':'none',
+                'padding':'10',
+                'font-size':'15px/1 Nanum Myeongjo',
+            })
+
+            if($search_input == ''){
+                $("input").removeClass();
+            }
     })
 
-    $search_btn.on("click", function(){
-        if($search_input == ''){
-            $(`<input type="text" placeholder="Search here.">`).removeClass();
-        }
-    })
+    // $search_btn.on("click", function(){
+    //     if($search_input == ''){
+    //         $(`<input type='text' placeholder='Search here.'>`).removeClass();
+    //     }
+    // })
 })
 
 
@@ -89,7 +101,3 @@ $(document).ready(function(){
         $menuAll_close.hide();
     })
 })
-
-
-
-
