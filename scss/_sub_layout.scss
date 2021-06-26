@@ -1,104 +1,100 @@
-#sub_banner{
+.sub_banner{
+    width:100%;
+    height:300px;
+        background:rgb(162, 98, 199);
+    .inner{
+        width:100%;
+        
+    }
+}
+
+.sub_title{
     width:100%; 
-    padding-top:50px;
+    padding-top:40px;
+    margin-top:100px;
     .inner{
         width:1180px; 
         margin:0 auto; 
-        border:1px solid #555;
+        border:1px solid lightgrey;
         position:relative;
     
         h1{
             font:bold 30px/1 'Nanum Myeongjo';
-            color:#888;
-            padding:100px 30px;
-            text-align: left;
+            color:#555;
+            padding:70px 30px;
+            text-align: center;
         }
 
         .wrap{
-            content:''; 
-            display:block; 
-            clear:both;
-            
-            .homebtn{
+            width:100%;
+            position:absolute;
+            top:-34px;
+            left:0;
+
+            &::after{
+                content:''; 
                 display:block; 
-                width:5%; 
-                text-align:center; 
-                background:#eee;
+                clear:both;
+            }
+
+            li{
                 float:left;
-                margin-right:3px;
+                padding-right:80px;
+                text-align:center; 
+                border:solid 1px solid;
                 
                 a{
-                    font:15px/40px 'Nanum Myeongjo';
+                    display:block; 
+                    width:30px;
+                    height:30px;
+                    font:15px/30px 'Nanum Myeongjo';
                     color:#666;
+                    text-align: center;
+                    padding:0 20px; 
+                    
                 }
             
-            }
+                select[name=firstSelect]{
+                    display:block; 
+                    width:100px;
+                    height:30px;
+                    border:none;
+                    font:13px/30px 'Nanum Myeongjo';
+                    color:#666; 
+                }
+    
+                select[name=secondSelect]{
+                    display:block; 
+                    width:100px;
+                    height:30px;
+                    font:13px/30px 'Nanum Myeongjo';
+                    color:#666; 
+                    border:none;
+                }
 
-            select[name=firstSelect]{
-                display:block; 
-                width:15%; 
-                height:40px;
-                border:none;
-                background:#eee;
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666; 
-                float:left;
-                margin-right:3px;
-            }
+                &::after{
+                    display:block;      
+                    content:'>'; 
+                    width:30px;
+                    height:30px;
+                    font-size:18px;
+                    transform:translate(-55px, -30px);
+                    color:#999;
+                }
 
-            select[name=secondSelect]{
-                display:block; 
-                width:15%; 
-                height:40px;
-                border:none;
-                background:#eee;
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666; 
-                float:left;
-                margin-right:3px;
-            }
-
-            select[name=searchIndex]{
-                display:block; 
-                width:15%; 
-                height:40px;
-                border:none;
-                background:#eee;
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666;
-                float:left;
-                margin-right:3px;
-            }
-
-            input[type=text]{
-                display:block; 
-                width:25%;
-                height:40px;
-                border:none;
-                background:#eee;
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666; 
-                float:left;
-            }
-
-            button{
-                display:block; 
-                width:calc(5% - 3px*4);
-                height:40px;
-                border:none;
-                background:#eee;
-                font:15px/40px 'Nanum Myeongjo';
-                color:#666; 
-                float:left;
+                &:first-of-type::after{
+                    display: none;
+                }
             }
         }
     }
 }
 
 
+
 //tablet
 @media screen and (max-width:1179px){
-    #sub_banner{
+    .sub_title{
         padding:20px 20px 50px;  box-sizing: border-box;
         .inner{
             width:100%;
@@ -145,7 +141,7 @@
 
 //mobile
 @media screen and (max-width:539px){
-    #sub_banner{
+    .sub_title{
         padding:20px 20px 50px;  box-sizing: border-box;
         .inner{
             width:100%;

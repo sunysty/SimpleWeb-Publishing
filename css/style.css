@@ -16,147 +16,139 @@ a {
   clear: both;
   content: ''; }
 
-#sub_banner {
+.sub_banner {
   width: 100%;
-  padding-top: 50px; }
-  #sub_banner .inner {
+  height: 300px;
+  background: #a262c7; }
+  .sub_banner .inner {
+    width: 100%; }
+
+.sub_title {
+  width: 100%;
+  padding-top: 40px;
+  margin-top: 100px; }
+  .sub_title .inner {
     width: 1180px;
     margin: 0 auto;
-    border: 1px solid #555;
+    border: 1px solid lightgrey;
     position: relative; }
-    #sub_banner .inner h1 {
+    .sub_title .inner h1 {
       font: bold 30px/1 'Nanum Myeongjo';
-      color: #888;
-      padding: 100px 30px;
-      text-align: left; }
-    #sub_banner .inner .wrap {
-      content: '';
-      display: block;
-      clear: both; }
-      #sub_banner .inner .wrap .homebtn {
-        display: block;
-        width: 5%;
-        text-align: center;
-        background: #eee;
-        float: left;
-        margin-right: 3px; }
-        #sub_banner .inner .wrap .homebtn a {
-          font: 15px/40px 'Nanum Myeongjo';
-          color: #666; }
-      #sub_banner .inner .wrap select[name=firstSelect] {
-        display: block;
-        width: 15%;
-        height: 40px;
-        border: none;
-        background: #eee;
-        font: 15px/40px 'Nanum Myeongjo';
-        color: #666;
-        float: left;
-        margin-right: 3px; }
-      #sub_banner .inner .wrap select[name=secondSelect] {
-        display: block;
-        width: 15%;
-        height: 40px;
-        border: none;
-        background: #eee;
-        font: 15px/40px 'Nanum Myeongjo';
-        color: #666;
-        float: left;
-        margin-right: 3px; }
-      #sub_banner .inner .wrap select[name=searchIndex] {
-        display: block;
-        width: 15%;
-        height: 40px;
-        border: none;
-        background: #eee;
-        font: 15px/40px 'Nanum Myeongjo';
-        color: #666;
-        float: left;
-        margin-right: 3px; }
-      #sub_banner .inner .wrap input[type=text] {
-        display: block;
-        width: 25%;
-        height: 40px;
-        border: none;
-        background: #eee;
-        font: 15px/40px 'Nanum Myeongjo';
-        color: #666;
-        float: left; }
-      #sub_banner .inner .wrap button {
-        display: block;
-        width: calc(5% - 3px*4);
-        height: 40px;
-        border: none;
-        background: #eee;
-        font: 15px/40px 'Nanum Myeongjo';
-        color: #666;
-        float: left; }
-
-@media screen and (max-width: 1179px) {
-  #sub_banner {
-    padding: 20px 20px 50px;
-    box-sizing: border-box; }
-    #sub_banner .inner {
-      width: 100%; }
-      #sub_banner .inner h1 {
-        font: 500 30px/1 'Noto Sans JP'; }
-      #sub_banner .inner .wrap {
+      color: #555;
+      padding: 70px 30px;
+      text-align: center; }
+    .sub_title .inner .wrap {
+      width: 100%;
+      position: absolute;
+      top: -34px;
+      left: 0; }
+      .sub_title .inner .wrap::after {
         content: '';
         display: block;
         clear: both; }
-        #sub_banner .inner .wrap .homebtn {
+      .sub_title .inner .wrap li {
+        float: left;
+        padding-right: 80px;
+        text-align: center;
+        border: solid 1px solid; }
+        .sub_title .inner .wrap li a {
+          display: block;
+          width: 30px;
+          height: 30px;
+          font: 15px/30px 'Nanum Myeongjo';
+          color: #666;
+          text-align: center;
+          padding: 0 20px; }
+        .sub_title .inner .wrap li select[name=firstSelect] {
+          display: block;
+          width: 100px;
+          height: 30px;
+          border: none;
+          font: 13px/30px 'Nanum Myeongjo';
+          color: #666; }
+        .sub_title .inner .wrap li select[name=secondSelect] {
+          display: block;
+          width: 100px;
+          height: 30px;
+          font: 13px/30px 'Nanum Myeongjo';
+          color: #666;
+          border: none; }
+        .sub_title .inner .wrap li::after {
+          display: block;
+          content: '>';
+          width: 30px;
+          height: 30px;
+          font-size: 18px;
+          transform: translate(-55px, -30px);
+          color: #999; }
+        .sub_title .inner .wrap li:first-of-type::after {
+          display: none; }
+
+@media screen and (max-width: 1179px) {
+  .sub_title {
+    padding: 20px 20px 50px;
+    box-sizing: border-box; }
+    .sub_title .inner {
+      width: 100%; }
+      .sub_title .inner h1 {
+        font: 500 30px/1 'Noto Sans JP'; }
+      .sub_title .inner .wrap {
+        content: '';
+        display: block;
+        clear: both; }
+        .sub_title .inner .wrap .homebtn {
           height: 30px; }
-          #sub_banner .inner .wrap .homebtn a {
+          .sub_title .inner .wrap .homebtn a {
             font: 14px/30px 'Nanum Myeongjo'; }
-        #sub_banner .inner .wrap select[name=firstSelect] {
+        .sub_title .inner .wrap select[name=firstSelect] {
           font: 11px/30px 'Nanum Myeongjo';
           height: 30px; }
-        #sub_banner .inner .wrap select[name=secondSelect] {
+        .sub_title .inner .wrap select[name=secondSelect] {
           font: 11px/30px 'Nanum Myeongjo';
           height: 30px; }
-        #sub_banner .inner .wrap select[name=searchIndex] {
+        .sub_title .inner .wrap select[name=searchIndex] {
           font: 11px/30px 'Nanum Myeongjo';
           height: 30px; }
-        #sub_banner .inner .wrap input[type=text] {
+        .sub_title .inner .wrap input[type=text] {
           font: 11px/30px 'Nanum Myeongjo';
           height: 30px; }
-        #sub_banner .inner .wrap button {
+        .sub_title .inner .wrap button {
           font: 11px/30px 'Nanum Myeongjo';
           height: 30px; } }
 @media screen and (max-width: 539px) {
-  #sub_banner {
+  .sub_title {
     padding: 20px 20px 50px;
     box-sizing: border-box; }
-    #sub_banner .inner {
+    .sub_title .inner {
       width: 100%; }
-      #sub_banner .inner h1 {
+      .sub_title .inner h1 {
         font: 500 15px/1 'Noto Sans JP'; }
-      #sub_banner .inner .wrap {
+      .sub_title .inner .wrap {
         content: '';
         display: block;
         clear: both;
         width: 100%; }
-        #sub_banner .inner .wrap .homebtn {
+        .sub_title .inner .wrap .homebtn {
           width: 5%; }
-          #sub_banner .inner .wrap .homebtn a {
+          .sub_title .inner .wrap .homebtn a {
             font: 10px/30px 'Nanum Myeongjo';
             color: #666; }
-        #sub_banner .inner .wrap select[name=firstSelect] {
+        .sub_title .inner .wrap select[name=firstSelect] {
           height: 30px;
           font: 10px/30px 'Nanum Myeongjo'; }
-        #sub_banner .inner .wrap select[name=secondSelect] {
+        .sub_title .inner .wrap select[name=secondSelect] {
           height: 30px;
           font: 11px/30px 'Nanum Myeongjo'; }
-        #sub_banner .inner .wrap select[name=searchIndex] {
+        .sub_title .inner .wrap select[name=searchIndex] {
           height: 30px;
           font: 11px/30px 'Nanum Myeongjo'; }
-        #sub_banner .inner .wrap input[type=text] {
+        .sub_title .inner .wrap input[type=text] {
           width: calc(25% - 3px*4);
           height: 30px;
           padding: 0 5px;
           box-sizing: border-box;
           font: 11px/30px 'Nanum Myeongjo'; }
-        #sub_banner .inner .wrap button {
+        .sub_title .inner .wrap button {
           width: 5%;
           height: 30px;
           font: 11px/30px 'Nanum Myeongjo'; } }
@@ -928,14 +920,14 @@ a {
     display: block;
     width: 100vw;
     height: 1px;
-    background: #999;
+    background: lightgrey;
     transform: translateY(-185px); }
   #header::before {
     content: '';
     display: block;
     width: 100vw;
     height: 1px;
-    background: #999;
+    background: lightgrey;
     transform: translateY(220px); }
   #header .inner {
     width: 1180px;
@@ -960,7 +952,7 @@ a {
         clear: both; }
       #header .inner #nav .gnb > li {
         display: block;
-        width: calc(80% / 5);
+        width: calc(93% / 6);
         height: 50px;
         text-align: center;
         float: left;
@@ -978,7 +970,7 @@ a {
           content: '';
           width: 1px;
           height: 30px;
-          background: #555;
+          background: lightgrey;
           transform: translateY(-130%); }
         #header .inner #nav .gnb > li:first-of-type::after {
           display: none; }
@@ -1042,24 +1034,9 @@ a {
             width: 20%;
             height: 200px;
             background: black; }
-        #header .inner #nav .gnb > li:nth-of-type(1) .sub div {
-          background-image: url("https://images.unsplash.com/photo-1534863098989-9d5a7794038e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80");
-          background-size: cover; }
-        #header .inner #nav .gnb > li:nth-of-type(2) .sub div {
-          background-image: url("https://images.unsplash.com/photo-1570501685214-f1f5d61b2db8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80");
-          background-size: cover; }
-        #header .inner #nav .gnb > li:nth-of-type(3) .sub div {
-          background-image: url("https://images.unsplash.com/photo-1624459065945-4ab3d70c9bb4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
-          background-size: cover; }
-        #header .inner #nav .gnb > li:nth-of-type(4) .sub div {
-          background-image: url("https://images.unsplash.com/photo-1502743780242-f10d2ce370f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1016&q=80");
-          background-size: cover; }
-        #header .inner #nav .gnb > li:nth-of-type(5) .sub div {
-          background-image: url("https://images.unsplash.com/photo-1624421514201-db391243ed51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
-          background-size: cover; }
       #header .inner #nav .menuAll .menuAll-btn {
         display: block;
-        width: 5%;
+        width: 7%;
         height: 50px;
         position: absolute;
         right: 0;
@@ -1068,6 +1045,13 @@ a {
         #header .inner #nav .menuAll .menuAll-btn i {
           color: #333;
           line-height: 50px; }
+        #header .inner #nav .menuAll .menuAll-btn::after {
+          display: block;
+          content: '';
+          width: 1px;
+          height: 30px;
+          background: lightgrey;
+          transform: translateY(-130%); }
       #header .inner #nav .menuAll .menuAll-full {
         display: none;
         width: 100%;
@@ -1117,26 +1101,13 @@ a {
         content: '';
         display: block;
         clear: both; }
-      #header .inner .gnb-top .gnb-top-left .family {
+      #header .inner .gnb-top .gnb-top-left li {
         float: left;
-        margin-right: 20px; }
-        #header .inner .gnb-top .gnb-top-left .family a {
+        margin-left: 20px; }
+        #header .inner .gnb-top .gnb-top-left li a {
           display: block;
-          color: #111;
-          font: 16px/30px 'Nanum Myeongjo'; }
-      #header .inner .gnb-top .gnb-top-left .contact {
-        float: left;
-        margin-right: 20px; }
-        #header .inner .gnb-top .gnb-top-left .contact a {
-          display: block;
-          color: #111;
-          font: 16px/30px 'Nanum Myeongjo'; }
-      #header .inner .gnb-top .gnb-top-left .faq {
-        float: left; }
-        #header .inner .gnb-top .gnb-top-left .faq a {
-          display: block;
-          color: #111;
-          font: 16px/30px 'Nanum Myeongjo'; }
+          color: #000;
+          font: 13px/30px 'Nanum Myeongjo'; }
       #header .inner .gnb-top .gnb-top-left > li > a:hover {
         font-weight: bold; }
     #header .inner .gnb-top .gnb-top-right {

@@ -52,7 +52,7 @@
         display:block;
         width:100vw;
         height:1px;
-        background: #999;
+        background: lightgrey;
         transform: translateY(-185px);
         
     }
@@ -61,7 +61,7 @@
         display:block;
         width:100vw;
         height:1px;
-        background: #999;
+        background: lightgrey;
         transform: translateY(220px);
     }
 
@@ -98,7 +98,7 @@
                 
                 >li{
                     display: block;
-                    width: calc(80% / 5); 
+                    width: calc(93% / 6); 
                     height: 50px;
                     text-align: center;
                     float: left;
@@ -123,7 +123,7 @@
                         content: '';
                         width: 1px; 
                         height: 30px; 
-                        background: #555;
+                        background: lightgrey;
                         transform: translateY(-130%);
                     }
                     &:first-of-type::after{
@@ -214,38 +214,6 @@
                             background: black;
                         }
                     }
-
-                    &:nth-of-type(1){
-                        .sub div{
-                            background-image:url("https://images.unsplash.com/photo-1534863098989-9d5a7794038e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80");
-                            background-size: cover;
-                        }
-                    }
-                    &:nth-of-type(2){
-                        .sub div{
-                            background-image:url("https://images.unsplash.com/photo-1570501685214-f1f5d61b2db8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80");
-                            background-size: cover;
-                        }   
-                    }
-                    &:nth-of-type(3){
-                        .sub div{
-                            background-image:url("https://images.unsplash.com/photo-1624459065945-4ab3d70c9bb4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
-                            background-size: cover;
-                        }   
-                    }
-                    &:nth-of-type(4){
-                        .sub div{
-                            background-image:url("https://images.unsplash.com/photo-1502743780242-f10d2ce370f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1016&q=80");
-                            background-size: cover;
-                        }
-                    }
-                    &:nth-of-type(5){
-                        .sub div{
-                            background-image:url("https://images.unsplash.com/photo-1624421514201-db391243ed51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
-                            background-size: cover;
-                        }   
-                    }
-                    
                 }
             }
 
@@ -253,7 +221,7 @@
                 
                 .menuAll-btn{
                     display:block;
-                    width:5%;
+                    width:7%;
                     height:50px;
                     position:absolute;
                     right:0;
@@ -262,6 +230,15 @@
                     i{
                         color:#333;
                         line-height:50px;
+                    }
+
+                    &::after{
+                        display: block;
+                        content: '';
+                        width: 1px; 
+                        height: 30px; 
+                        background: lightgrey;
+                        transform: translateY(-130%);
                     }
                 }
 
@@ -339,37 +316,15 @@
                     clear:both;
                 }
     
-                .family{
+                li{
                     float:left;
-                    margin-right:20px;
+                    margin-left:20px;
     
                     a{
                         display:block;
-                        color:#111;
-                        font:16px/30px 'Nanum Myeongjo';
+                        color:#000;
+                        font:13px/30px 'Nanum Myeongjo';
                        
-                    }
-                }
-    
-                .contact{
-                    float:left;
-                    margin-right:20px;
-                    
-                    a{
-                        display:block;
-                        color:#111;
-                        font:16px/30px 'Nanum Myeongjo';
-    
-                    }
-                }
-    
-                .faq{
-                    float:left;
-                    
-                    a{
-                        display:block;
-                        color:#111;
-                        font:16px/30px 'Nanum Myeongjo';
                     }
                 }
 
