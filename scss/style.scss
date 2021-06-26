@@ -46,7 +46,7 @@
 #header{
     width: 100%; 
     z-index: 3;
-    
+
     &::after{
         content:'';
         display:block;
@@ -54,6 +54,7 @@
         height:1px;
         background: #999;
         transform: translateY(-185px);
+        
     }
     &::before{
         content:'';
