@@ -62,7 +62,7 @@
         width:100vw;
         height:1px;
         background: lightgrey;
-        transform: translateY(220px);
+        transform: translateY(165px);
     }
 
     .inner{
@@ -421,10 +421,13 @@
         }
 
         .wrap{
-            &::after{
-                display: block; content:''; clear:both;
-            }
             padding:100px 0;
+
+            &::after{
+                display: block; 
+                content:''; 
+                clear:both;
+            }
 
             article{
                 width:30%;

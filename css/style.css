@@ -558,7 +558,7 @@ a {
           .department .inner .chart > li .ceo .ceo-pic {
             width: 300px;
             height: 300px;
-            background: #9b5dbe;
+            background: #333;
             border-radius: 50%; }
           .department .inner .chart > li .ceo .ceo-sns {
             width: 300px;
@@ -567,7 +567,7 @@ a {
               display: inline-block;
               width: 20%; }
               .department .inner .chart > li .ceo .ceo-sns a i {
-                color: #9b5dbe;
+                color: #333;
                 font-size: 30px; }
             .department .inner .chart > li .ceo .ceo-sns::after {
               display: none; }
@@ -709,7 +709,7 @@ a {
 
 .content {
   width: 100%;
-  padding: 100px 0px 150px;
+  padding: 30px 0px 150px;
   box-sizing: border-box; }
   .content .inner {
     width: 1180px;
@@ -720,7 +720,7 @@ a {
       margin-bottom: 50px;
       cursor: pointer; }
     .content .inner #search {
-      margin: 0 auto 50px; }
+      margin: 0 auto 30px; }
       .content .inner #search input {
         width: 400px;
         height: 50px;
