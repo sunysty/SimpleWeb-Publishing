@@ -630,24 +630,23 @@ a {
       height: 200px;
       border: 1px #eee solid;
       font: 15px 'Nanum Myeongjo'; }
-      #location .inner .location-info dl {
-        width: 20%;
-        margin: 0 auto; }
-    #location .inner .location-con table {
-      width: 100%;
-      margin-bottom: 100px;
-      font: 15px 'Nanum Myeongjo'; }
-      #location .inner .location-con table caption {
-        display: none; }
-      #location .inner .location-con table th {
-        background-color: #ccc;
-        font-weight: 800; }
-      #location .inner .location-con table th, #location .inner .location-con table td {
-        border-right: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-        padding: 10px; }
-      #location .inner .location-con table td:last-of-type {
-        border-right: none; }
+    #location .inner .location-con {
+      margin-top: 100px; }
+      #location .inner .location-con table {
+        width: 100%;
+        margin-bottom: 100px;
+        font: 15px 'Nanum Myeongjo'; }
+        #location .inner .location-con table caption {
+          display: none; }
+        #location .inner .location-con table th {
+          background-color: #ccc;
+          font-weight: 800; }
+        #location .inner .location-con table th, #location .inner .location-con table td {
+          border-right: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          padding: 10px; }
+        #location .inner .location-con table td:last-of-type {
+          border-right: none; }
 
 #videoGallery {
   width: 100%;
