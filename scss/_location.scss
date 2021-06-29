@@ -30,8 +30,8 @@
                         display:block; 
                         width:200px; 
                         height:40px; 
-                        background:#555; 
-                        font:bold 12px/40px 'arial'; 
+                        background:lightgrey; 
+                        font:bold 12px/40px 'Nanum Myeongjo'; 
                         color:#fff; 
                         text-align:center; 
                     }
@@ -39,8 +39,8 @@
                     &.on{
                         a{
                             background:#fff; 
-                            color:#333; 
-                            border:1px solid #333; 
+                            color:#777; 
+                            border:1px solid lightgrey; 
             
                         }
                     }
@@ -53,9 +53,19 @@
                     float:left; margin-right:10px; 
                     a{
                         display:block; width:200px; height:40px; 
-                        background:#555; 
-                        font:bold 12px/40px 'arial'; color:#fff; 
+                        background:lightgrey; 
+                        font:bold 12px/40px 'Nanum Myeongjo'; 
+                        color:#fff; 
                         text-align:center; 
+                    }
+
+                    &.on{
+                        a{
+                            background:#fff; 
+                            color:#777; 
+                            border:1px solid lightgrey; 
+            
+                        }
                     }
                 }
             }
