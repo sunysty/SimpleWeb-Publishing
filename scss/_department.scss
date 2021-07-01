@@ -9,188 +9,144 @@
                 width:100%;
                 height:1500px;
                 position:relative;
-                margin:500px 0;
+                margin:200px 0;
 
                 >li{
+                    //team명
                     width:150px;
-                    height:80px;
+                    height:60px;
                     border:1px solid lightgrey;
                     text-align:center;
                     background: #bbb;
 
                 //직책, 부서명
                     span{
-                        font:bold 25px/80px 'Nanum Myeongjo';
+                        font:bold 18px/60px 'Nanum Myeongjo';
                         color:#fff;
                     }
 
                     //부서이름 위치설정
+                    //ceo
                     &:nth-of-type(1){
-                        width:300px;
+                        width:200px;
                         position:absolute;
-                        top:0px;
+                        top:-160px;
                         left:50%;
                         transform:translateX(-50%);
                         background:#444;
                     }
-
+                    //부서명
                     &:nth-of-type(2){
-                        width:250px;
+                        width:300px;
                         position:absolute;
-                        top:400px;
-                        left:5%;
+                        top:250px;
+                        left:2%;
                         background:#666;
                     }
                     &:nth-of-type(3){
-                        width:250px;
+                        width:300px;
                         position:absolute;
-                        top:400px;
+                        top:250px;
                         left:50%;
                         transform:translateX(-50%);
                         background:#666;
                     }
                     &:nth-of-type(4){
-                        width:250px;
+                        width:300px;
                         position:absolute;
-                        top:400px;
-                        right:5%;
+                        top:250px;
+                        right:2%;
                         background:#666;
                     }
 
                     &:nth-of-type(5){
                         position:absolute;
-                        top:800px;
+                        top:400px;
                         left:0px;
                     }
                     &:nth-of-type(6){
                         position:absolute;
-                        top:800px;
+                        top:400px;
                         left:190px;
                     }
 
                     &:nth-of-type(7){
                         position:absolute;
-                        top:800px;
+                        top:400px;
                         left:420px;
                     }
                     &:nth-of-type(8){
                         position:absolute;
-                        top:800px;
+                        top:400px;
                         left:610px;
                     }
 
                     &:nth-of-type(9){
                         position:absolute;
-                        top:800px;
+                        top:400px;
                         left:840px;
                     }
                     &:nth-of-type(10){
                         position:absolute;
-                        top:800px;
+                        top:400px;
                         left:1030px;
                     }
 
-                // 전체 세로줄 스타일적용
-                    &::after{
-                        content:'';
-                        display:block;
-                        width:1px;
-                        height:125px;
-                        background: lightgrey;
+                //프로필
+                    //ceo 프로필
+                    .ceo{
                         position:absolute;
-                        top:-125px;
+                        top:80px;
                         left:50%;
-                    }
+                        transform: translateX(-50%);
 
-                    // 1층 세로줄
-                    &:nth-of-type(1)::after{
-                        display: none;
-                    }
-                    &:nth-of-type(3)::after{
-                        height:320px;
-                        top:-320px;
-                    }
+                        .ceo-pic{
+                            width:160px;
+                            height:160px;
+                            background: #333;
+                            border-radius: 50%;
+                            margin:0 auto;
 
-                    //2층 세로줄
-                    &:nth-of-type(5)::before,
-                    &:nth-of-type(7)::before,
-                    &:nth-of-type(9)::before{
-                        content:'';
-                        display:block;
-                        width:1px;
-                        height:195px;
-                        position:absolute;
-                        top:-320px;
-                        left:170px;
-                    }
-
-                //가로줄 전체 레이아웃
-                    &::before{
-                        content:'';
-                        display:block;
-                        width:190px;
-                        height:1px;
-                        position:absolute;
-                        top:275px;
-                        left:15px;
-                        background:lightgrey;
-                    }
-                    
-                    // 1층, 2층 가로줄
-                    &:nth-of-type(1)::before{
-                        width:810px;
-                        left:-256px;
-                    }
-                    
-                    &:nth-of-type(3)::before{left:30px;}
-                    &:nth-of-type(4)::before{left:42px;}
-                    
-                    &:nth-of-type(6)::before,
-                    &:nth-of-type(8)::before,
-                    &:nth-of-type(10)::before{
-                        display: none;
-                    }
-
-                //3층 세로줄
-                    >ul>li{
-                        position:relative;
-
-                        &::after{
-                            display:block;
-                            content:'';
-                            width:1px;
-                            height:50px;
-                            background:lightgrey;
-                            position:absolute;
-                            top:-50px;
-                            left:50%;
                         }
-
+                        .ceo-sns{
+                            width:300px;
+                            margin-top:20px;
+                            a{
+                                display:inline-block;
+                                width:15%;
+                                
+                                i{
+                                    color:#333;
+                                    font-size:20px;
+                                }
+                            }
+                            &::after{
+                                display:none;
+                            }
+                        }
                     }
-
-                //프로필정보
                     
                     //team 개인프로필 레이아웃
                     .pic{
-                        width:130px;
-                        height:130px;
+                        width:100px;
+                        height:100px;
                         border-radius:50%;
                         background:#bbb;
                         margin:0 auto;
 
                         span{
-                            font:normal 20px/130px 'Nanum Myeongjo';
+                            font:normal 17px/100px 'Nanum Myeongjo';
                         }
                     }
                     .sns{
                         margin-top:10px;
                         a{
                             display:inline-block;
-                            width:20%;
+                            width:15%;
                             
                             i{
                                 color:#bbb;
-                                font-size:20px;
+                                font-size:15px;
                             }
 
                             &:hover{
@@ -208,38 +164,124 @@
                         margin-top:50px;
                     }
 
-                    //ceo 프로필
-                    .ceo{
-                        position:absolute;
-                        top:-500px;
-
-                        .ceo-pic{
-                            width:300px;
-                            height:300px;
-                            background: #333;
-                            border-radius: 50%;
-                        }
-                        .ceo-sns{
-                            width:300px;
-                            margin-top:50px;
-                            a{
-                                display:inline-block;
-                                width:20%;
-                                
-                                i{
-                                    color:#333;
-                                    font-size:30px;
-                                }
-                            }
-                            &::after{
-                                display:none;
-                            }
-                        }
-                    }
-                    
                     &:hover{
                         opacity:1.5;
                         cursor:pointer;
+                    }
+
+                // 전체 세로줄 스타일적용
+                    &::after{
+                        content:'';
+                        display:block;
+                        width:1px;
+                        height:50px;
+                        background: lightgrey;
+                        position:absolute;
+                        top:-50px;
+                        left:50%;
+                    }
+
+                    // 1층 세로줄
+                    &:nth-of-type(1)::after{
+                        display: none;
+                    }
+                    &:nth-of-type(3)::after{
+                        height:100px;
+                        top:-100px;
+                    }
+
+                    //2층 세로줄
+                    &:nth-of-type(5)::before,
+                    &:nth-of-type(7)::before,
+                    &:nth-of-type(9)::before{
+                        content:'';
+                        display:block;
+                        width:1px;
+                        position:absolute;
+                        top:-320px;
+                        left:170px;
+                    }
+
+                //가로줄 전체 레이아웃
+                    &::before{
+                        content:'';
+                        display:block;
+                        width:190px;
+                        height:1px;
+                        position:absolute;
+                        top:100px;
+                        left:50px;
+                        background:lightgrey;
+                    }
+                    
+                    // 1층, 2층 가로줄
+                    &:nth-of-type(1)::before{
+                        width:834px;
+                        left:-318px;
+                        top:350px;
+                    }
+                    
+                    &:nth-of-type(3)::before{transform: translateX(5px);}
+                    &:nth-of-type(4)::before{transform: translateX(8px);}
+                    
+                    &:nth-of-type(6)::before,
+                    &:nth-of-type(8)::before,
+                    &:nth-of-type(10)::before{
+                        display: none;
+                    }
+
+                //3층 세로줄
+
+                    &:nth-of-type(2)>span::after{
+                        display:block;
+                        content:'';
+                        width:1px;
+                        height:40px;
+                        background:lightgrey;
+                        position:absolute;
+                        top:60px;
+                        left:50%;
+                    }
+                    &:nth-of-type(3)>span::after{
+                        display:block;
+                        content:'';
+                        width:1px;
+                        height:40px;
+                        background:lightgrey;
+                        position:absolute;
+                        top:60px;
+                        left:50%;
+                    }
+                    &:nth-of-type(4)>span::after{
+                        display:block;
+                        content:'';
+                        width:1px;
+                        height:40px;
+                        background:lightgrey;
+                        position:absolute;
+                        top:60px;
+                        left:50%;
+                    }
+                    
+                    //4층 세로줄
+                    >ul{
+                        >li{
+                            position:relative;
+
+                            &:nth-of-type(1)::after{
+                                display: none;
+                            }
+                            &::after{
+                                display:block;
+                                content:'';
+                                width:1px;
+                                height:50px;
+                                background:lightgrey;
+                                position:absolute;
+                                top:-50px;
+                                left:50%;
+                            }
+                    }
                     }
                 }
         }    
