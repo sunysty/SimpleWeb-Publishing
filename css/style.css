@@ -1199,35 +1199,6 @@ a {
     height: 700px;
     background: lightgoldenrodyellow; }
 
-#quickMenu {
-  width: 100%;
-  padding: 200px 0; }
-  #quickMenu .inner {
-    width: 1180px;
-    margin: 0 auto; }
-    #quickMenu .inner h1 {
-      display: none; }
-    #quickMenu .inner::after {
-      display: block;
-      content: '';
-      clear: both; }
-    #quickMenu .inner .wrap li {
-      width: 33.333%;
-      height: 100px;
-      float: left;
-      border: 3px solid black;
-      box-sizing: border-box;
-      text-align: center; }
-      #quickMenu .inner .wrap li a {
-        display: block;
-        width: 100%;
-        font: bold 20px/100px 'Nanum Myeongjo';
-        color: #000; }
-      #quickMenu .inner .wrap li:hover {
-        background: #000; }
-        #quickMenu .inner .wrap li:hover a {
-          color: #eee; }
-
 #footer {
   width: 100%;
   padding: 100px 0;

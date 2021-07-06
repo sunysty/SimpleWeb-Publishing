@@ -483,47 +483,47 @@
 //     }
 // }
 
-#quickMenu{
-    width:100%;
-    padding:200px 0;
+// #quickMenu{
+//     width:100%;
+//     padding:200px 0;
 
-    .inner{
-        width:1180px;
-        margin:0 auto;
+//     .inner{
+//         width:1180px;
+//         margin:0 auto;
         
-        h1{
-            display: none;
-        }
+//         h1{
+//             display: none;
+//         }
         
-        &::after{
-            display: block; content:''; clear:both;
-        }
+//         &::after{
+//             display: block; content:''; clear:both;
+//         }
         
-        .wrap{
-            li{
-                width:33.333%;
-                height:100px;
-                float:left;
-                border: 3px solid black;
-                box-sizing: border-box;
-                text-align: center;
+//         .wrap{
+//             li{
+//                 width:33.333%;
+//                 height:100px;
+//                 float:left;
+//                 border: 3px solid black;
+//                 box-sizing: border-box;
+//                 text-align: center;
                 
-                a{
-                    display:block;
-                    width:100%;
-                    font:bold 20px/100px 'Nanum Myeongjo';
-                    color:#000;
-                }
-                &:hover{
-                    background:#000;
-                    a{
-                    color:#eee;
-                    }
-                }
-            }
-        }
-    }
-}
+//                 a{
+//                     display:block;
+//                     width:100%;
+//                     font:bold 20px/100px 'Nanum Myeongjo';
+//                     color:#000;
+//                 }
+//                 &:hover{
+//                     background:#000;
+//                     a{
+//                     color:#eee;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 #footer{
     width:100%; 
